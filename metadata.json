@@ -1,0 +1,6 @@
+{
+  "name": "Daniel Mello Uruguaio",
+  "description": "Landing page e portfólio oficial do músico, cantor, compositor e ativista cultural Daniel Mello Uruguaio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
