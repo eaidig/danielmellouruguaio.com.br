@@ -106,6 +106,10 @@
           <!-- Desktop Nav Menu -->
           <nav class="hidden md:flex items-center gap-8">
             <a href="#inicio" class="nav-link text-neutral-400 hover:text-white text-xs font-bold uppercase tracking-widest active">Início</a>
+            <a href="#livro" class="nav-link text-brand-yellow hover:text-white text-xs font-bold uppercase tracking-widest flex items-center gap-1.5">
+              <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+              O Livro
+            </a>
             <a href="#trajetoria" class="nav-link text-neutral-400 hover:text-white text-xs font-bold uppercase tracking-widest">Trajetória</a>
             <a href="#projetos" class="nav-link text-neutral-400 hover:text-white text-xs font-bold uppercase tracking-widest">Projetos</a>
             <a href="#podcast" class="nav-link text-neutral-400 hover:text-white text-xs font-bold uppercase tracking-widest">Podcast</a>
@@ -144,6 +148,10 @@
       <div id="mobile-menu" class="hidden md:hidden bg-[#0D0E0C]/95 border-b border-[#20221E] backdrop-blur-md">
         <div class="px-4 pt-2 pb-6 space-y-2">
           <a href="#inicio" class="mobile-nav-link block px-4 py-3 rounded-xl text-neutral-300 hover:text-white hover:bg-neutral-900 text-xs font-bold uppercase tracking-widest">Início</a>
+          <a href="#livro" class="mobile-nav-link block px-4 py-3 rounded-xl text-brand-yellow font-bold hover:text-white hover:bg-neutral-900 text-xs uppercase tracking-widest flex items-center gap-2">
+            <i data-lucide="book-open" class="w-4 h-4"></i>
+            O Livro (Autobiografia)
+          </a>
           <a href="#trajetoria" class="mobile-nav-link block px-4 py-3 rounded-xl text-neutral-300 hover:text-white hover:bg-neutral-900 text-xs font-bold uppercase tracking-widest">Trajetória</a>
           <a href="#projetos" class="mobile-nav-link block px-4 py-3 rounded-xl text-neutral-300 hover:text-white hover:bg-neutral-900 text-xs font-bold uppercase tracking-widest">Projetos</a>
           <a href="#podcast" class="mobile-nav-link block px-4 py-3 rounded-xl text-neutral-300 hover:text-white hover:bg-neutral-900 text-xs font-bold uppercase tracking-widest">Podcast</a>
@@ -164,30 +172,38 @@
 
     <main class="pt-20">
 
-      <!-- SECTION 1: HERO (INÍCIO) -->
-      <section id="inicio" class="min-h-[85vh] flex items-center justify-center relative py-12 px-4 overflow-hidden border-b border-[#20221E]/40">
-        <!-- Abstract Atmospheric Glow Background -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(229,169,0,0.06),transparent_50%)] pointer-events-none"></div>
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(43,108,176,0.04),transparent_50%)] pointer-events-none"></div>
+      <!-- SECTION 1: HERO (INÍCIO & LANÇAMENTO DO LIVRO AUTOBIOGRÁFICO) -->
+      <section id="inicio" class="min-h-[88vh] flex items-center justify-center relative py-12 sm:py-16 px-4 overflow-hidden border-b border-[#20221E]/40 scroll-mt-20">
+        <!-- Bookmark anchor for direct navigation to the book -->
+        <div id="livro" class="absolute -top-24"></div>
         
-        <!-- Elegant thin graphic dividing lines -->
+        <!-- Atmospheric Glow Background -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(229,169,0,0.08),transparent_50%)] pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(43,108,176,0.05),transparent_50%)] pointer-events-none"></div>
+        
+        <!-- Thin graphic dividing lines -->
         <div class="absolute left-1/3 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-[#20221E]/30 to-transparent pointer-events-none hidden lg:block"></div>
         <div class="absolute left-2/3 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-[#20221E]/30 to-transparent pointer-events-none hidden lg:block"></div>
 
-        <div class="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center px-4 sm:px-6 lg:px-8">
           
-          <!-- Column 1: Pitch & Brand (7 cols) -->
-          <div class="lg:col-span-7 space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start">
+          <!-- Column 1: Pitch & Autobiography Manifesto (7 cols) -->
+          <div class="lg:col-span-7 space-y-5 text-center lg:text-left flex flex-col items-center lg:items-start">
             
-            <!-- Upper border tag -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-neutral-900/90 border border-[#20221E] rounded-full text-brand-yellow font-mono text-[10px] uppercase tracking-widest shadow-inner">
-              <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow animate-pulse"></span>
-              A Voz das Duas Fronteiras
+            <!-- Badges -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+              <span class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-brand-yellow/10 border border-brand-yellow/30 rounded-full text-brand-yellow font-mono text-[10px] uppercase tracking-widest shadow-inner">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow animate-ping"></span>
+                Novo Lançamento • Livro Oficial
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-neutral-900 border border-[#20221E] rounded-full text-neutral-400 font-mono text-[10px] uppercase tracking-widest">
+                A Voz das Duas Fronteiras
+              </span>
             </div>
 
             <!-- Headings Display -->
-            <div class="space-y-3 w-full">
-              <h1 class="font-display font-black text-5xl sm:text-7xl md:text-8xl tracking-tight leading-none text-white uppercase select-none">
+            <div class="space-y-2 w-full">
+              <h1 class="font-display font-black text-4xl sm:text-6xl md:text-7xl tracking-tight leading-none text-white uppercase select-none">
                 Daniel Mello
               </h1>
               <div class="flex items-center justify-center lg:justify-start gap-4">
@@ -198,34 +214,81 @@
               </div>
             </div>
 
-            <!-- Subtitle description directly based on PDF -->
-            <p class="font-sans text-neutral-300 max-w-2xl text-sm sm:text-base md:text-lg leading-relaxed">
-              Mais de <strong class="text-white">40 anos de trajetória</strong> dedicados à música latino-americana, integrando as heranças tradicionais do pampa uruguaio às vivências sociais, ao ativismo cultural e ao cooperativismo no Rio Grande do Sul.
-            </p>
+            <!-- Impact Opening Statement -->
+            <div class="w-full bg-gradient-to-r from-neutral-900/90 to-neutral-900/50 border border-[#20221E] rounded-2xl p-4 sm:p-5 relative overflow-hidden text-left shadow-xl">
+              <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-brand-yellow via-brand-terracotta to-brand-blue"></div>
+              <p class="font-sans text-sm sm:text-base md:text-lg text-white font-medium leading-relaxed pl-2">
+                &ldquo;Sessenta e três anos. Dez discos. Treze anos de rádio. Duas filhas, dois netos, uma esposa que segurou minha mão em cada queda. <span class="text-brand-yellow font-bold">E, agora, um livro.</span>&rdquo;
+              </p>
+            </div>
 
-            <!-- Call to Actions -->
-            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2 w-full sm:w-auto">
+            <!-- The Book Title & Heartfelt Excerpt -->
+            <div class="space-y-3.5 text-neutral-300 font-sans text-xs sm:text-sm md:text-[15px] leading-relaxed text-left w-full">
+              <div class="flex items-baseline gap-2 flex-wrap">
+                <h2 class="font-serif italic text-xl sm:text-2xl text-brand-yellow font-bold tracking-tight">
+                  &ldquo;A Vida Como Ela É&rdquo;
+                </h2>
+                <span class="font-mono text-[10px] text-neutral-400 uppercase tracking-widest">
+                  — A Autobiografia
+                </span>
+              </div>
+              
+              <p class="text-neutral-300">
+                Não é só a história de um cantor. É a história de um menino de sete anos, numa fronteira entre o Uruguai e o Brasil, que descobriu cedo demais que a vida nem sempre dá o troféu que a gente sonha — mas sempre, sempre, dá uma lição maior.
+              </p>
+              
+              <p class="text-neutral-300">
+                Escrevi este livro para quem já perdeu um &ldquo;Durazno&rdquo; na vida. Para quem já foi boicotado, esquecido, apagado — e ainda assim escolheu continuar cantando. Para quem acredita, como eu, que microfone é obrigação: se te deram voz, você vira voz de quem não tem.
+              </p>
+
+              <blockquote class="border-l-2 border-brand-yellow/60 pl-3.5 py-1 text-xs sm:text-sm text-neutral-200 italic font-serif bg-neutral-900/40 rounded-r-xl">
+                &ldquo;Obrigado a todos que caminharam comigo até aqui. Esse livro é, também, de vocês.&rdquo;
+                <footer class="not-italic font-mono text-[10px] text-brand-yellow uppercase tracking-widest mt-1.5 font-bold flex items-center gap-1.5">
+                  <span>— Daniel Mello Uruguaio</span>
+                </footer>
+              </blockquote>
+            </div>
+
+            <!-- Call to Actions (CTAs para adquirir na UICLAP) -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 pt-2 w-full">
+              <!-- Link 1: Português -->
+              <a
+                href="https://loja.uiclap.com/titulo/ua200240"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-5 py-3.5 bg-brand-yellow text-brand-charcoal hover:bg-white hover:scale-[1.02] transition-all duration-300 font-sans text-xs font-bold tracking-widest uppercase rounded-xl shadow-lg flex items-center justify-center gap-2 group cursor-pointer"
+                title="Comprar livro em Português na UICLAP"
+              >
+                <i data-lucide="book-open" class="w-4 h-4 text-brand-charcoal group-hover:scale-110 transition-transform"></i>
+                <span>Comprar Livro (Português)</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-60"></i>
+              </a>
+
+              <!-- Link 2: Espanhol -->
+              <a
+                href="https://loja.uiclap.com/titulo/ua200256"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-5 py-3.5 bg-neutral-900 border border-brand-blue/60 text-white hover:bg-brand-blue hover:border-brand-blue hover:scale-[1.02] transition-all duration-300 font-sans text-xs font-bold tracking-widest uppercase rounded-xl flex items-center justify-center gap-2 group cursor-pointer"
+                title="Comprar libro en Español en UICLAP"
+              >
+                <i data-lucide="globe" class="w-4 h-4 text-brand-blue group-hover:text-white transition-colors"></i>
+                <span>Comprar Libro (Español)</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-60"></i>
+              </a>
+
+              <!-- Secondary link: Ouvir Música -->
               <a
                 href="#musica"
-                class="w-full sm:w-auto px-8 py-4 bg-brand-yellow text-brand-charcoal hover:bg-white hover:scale-105 transition-all duration-300 font-sans text-xs font-bold tracking-widest uppercase rounded-xl shadow-lg flex items-center justify-center gap-2"
+                class="px-4 py-3.5 bg-neutral-900/60 border border-[#20221E] text-neutral-300 hover:text-white hover:bg-neutral-800 transition-all duration-300 font-sans text-xs font-semibold tracking-wider uppercase rounded-xl flex items-center justify-center gap-2 cursor-pointer"
               >
-                <i data-lucide="music" class="w-4 h-4"></i>
-                Ouvir Música
-              </a>
-              
-              <a
-                href="https://wa.me/555193282401?text=Olá%20Daniel!%20Vim%20do%20teu%20site%20e%20gostaria%20de%20agendar%20uma%20conversa."
-                target="_blank"
-                rel="noreferrer"
-                class="w-full sm:w-auto px-8 py-4 bg-neutral-900 border border-[#20221E] text-white hover:bg-neutral-800 transition-all duration-300 font-sans text-xs font-bold tracking-widest uppercase rounded-xl flex items-center justify-center gap-2"
-              >
-                <i data-lucide="message-circle" class="w-4 h-4 text-brand-yellow"></i>
-                Falar no WhatsApp
+                <i data-lucide="music-2" class="w-3.5 h-3.5 text-neutral-400"></i>
+                <span>Ouvir Música</span>
               </a>
             </div>
 
-            <!-- Coordinate Map Badges -->
-            <div class="pt-6 flex flex-wrap justify-center lg:justify-start items-center gap-x-6 gap-y-3 font-mono text-[10px] sm:text-xs text-neutral-500 uppercase tracking-widest">
+            <!-- Coordinate Badges -->
+            <div class="pt-3 flex flex-wrap justify-center lg:justify-start items-center gap-x-6 gap-y-2 font-mono text-[10px] sm:text-xs text-neutral-500 uppercase tracking-widest">
               <span class="flex items-center gap-1.5">
                 <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-terracotta"></i>
                 Artigas (UY)
@@ -244,92 +307,76 @@
 
           </div>
 
-          <!-- Column 2: Gorgeous Classical Guitar SVG Illustration (5 cols) -->
-          <div class="lg:col-span-5 relative w-full max-w-sm sm:max-w-md mx-auto aspect-square flex items-center justify-center pt-4 lg:pt-0">
-            <!-- Glowing ambient blur background behind illustration -->
-            <div class="absolute -inset-4 bg-gradient-to-tr from-brand-yellow/10 via-brand-terracotta/5 to-brand-blue/10 rounded-full blur-2xl opacity-70"></div>
+          <!-- Column 2: 3D Book Cover Showcase (5 cols) -->
+          <div class="lg:col-span-5 relative w-full flex flex-col items-center justify-center pt-4 lg:pt-0">
+            <!-- Glowing ambient blur background behind book cover -->
+            <div class="absolute -inset-4 bg-gradient-to-tr from-brand-yellow/15 via-brand-terracotta/10 to-brand-blue/15 rounded-3xl blur-2xl opacity-75"></div>
             
-            <!-- Highly refined art container -->
-            <div class="relative bg-neutral-900/40 border border-[#20221E] p-6 rounded-3xl w-full h-full flex flex-col justify-between shadow-2xl backdrop-blur-sm group hover:border-brand-yellow/20 transition-all duration-500">
+            <!-- Book Card Container -->
+            <div class="relative bg-neutral-900/70 border border-[#20221E] p-5 sm:p-6 rounded-3xl w-full max-w-sm sm:max-w-md flex flex-col items-center shadow-2xl backdrop-blur-md group hover:border-brand-yellow/30 transition-all duration-500">
               
-              <!-- Subtle decorative element -->
-              <div class="flex items-center justify-between">
-                <span class="font-mono text-[8px] text-brand-terracotta tracking-widest uppercase font-bold">Identidade Sonora</span>
-                <span class="font-mono text-[8px] text-neutral-500 tracking-widest uppercase">Estúdio da Fronteira</span>
+              <!-- Header chip -->
+              <div class="w-full flex items-center justify-between border-b border-[#20221E] pb-3 mb-4">
+                <span class="font-mono text-[9px] text-brand-yellow tracking-widest uppercase font-bold flex items-center gap-1.5">
+                  <i data-lucide="book-marked" class="w-3.5 h-3.5"></i>
+                  Capa Oficial
+                </span>
+                <span class="font-mono text-[9px] text-neutral-400 tracking-widest uppercase bg-neutral-800/80 px-2.5 py-0.5 rounded-full border border-neutral-700/50">
+                  UICLAP Editora
+                </span>
               </div>
 
-              <!-- High-Fidelity SVG Guitar Illustration -->
-              <div class="relative flex-1 flex items-center justify-center my-4 overflow-hidden rounded-2xl bg-[#080907] border border-[#20221E] min-h-[180px] sm:min-h-[220px]">
-                <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+              <!-- High-Fidelity Book Cover Image with 3D shadow and spine effect -->
+              <div class="relative mx-auto w-full max-w-[260px] sm:max-w-[290px] my-1 group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-yellow/20 via-brand-terracotta/20 to-brand-blue/20 rounded-2xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
-                <svg viewBox="0 0 400 400" class="w-full h-full max-h-[300px] select-none" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <!-- Definitions for elegant gradients -->
-                  <defs>
-                    <linearGradient id="guitarBody" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#C85A32" stop-opacity="0.2" />
-                      <stop offset="50%" stop-color="#E5A900" stop-opacity="0.1" />
-                      <stop offset="100%" stop-color="#0D0E0C" stop-opacity="0.9" />
-                    </linearGradient>
-                    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" stop-color="#E5A900" />
-                      <stop offset="100%" stop-color="#C85A32" />
-                    </linearGradient>
-                    <radialGradient id="soundHole">
-                      <stop offset="70%" stop-color="#000000" />
-                      <stop offset="100%" stop-color="#1A1B19" />
-                    </radialGradient>
-                  </defs>
-
-                  <!-- Abstract Guitar body outline -->
-                  <path d="M 120,280 C 120,340 180,360 200,360 C 220,360 280,340 280,280 C 280,230 250,210 240,190 C 230,170 270,140 250,100 C 230,60 170,60 150,100 C 130,140 170,170 160,190 C 150,210 120,230 120,280 Z" fill="url(#guitarBody)" stroke="#252723" stroke-width="1.5" />
-                  
-                  <!-- Sound hole (Boca do Violão) -->
-                  <circle cx="200" cy="230" r="35" fill="url(#soundHole)" stroke="url(#goldGlow)" stroke-width="1.5" />
-                  <!-- Elegant decorative rosette rings around sound hole -->
-                  <circle cx="200" cy="230" r="41" stroke="#252723" stroke-width="1" stroke-dasharray="4,3" />
-                  <circle cx="200" cy="230" r="46" stroke="#C85A32" stroke-opacity="0.5" stroke-width="1" />
-
-                  <!-- Fretboard / Braço do Violão stretching up -->
-                  <rect x="188" y="0" width="24" height="190" fill="#131412" stroke="#252723" stroke-width="1" />
-                  
-                  <!-- Frets (Trastes) -->
-                  <line x1="188" y1="30" x2="212" y2="30" stroke="#3E413B" stroke-width="1" />
-                  <line x1="188" y1="60" x2="212" y2="60" stroke="#3E413B" stroke-width="1" />
-                  <line x1="188" y1="90" x2="212" y2="90" stroke="#3E413B" stroke-width="1" />
-                  <line x1="188" y1="120" x2="212" y2="120" stroke="#3E413B" stroke-width="1" />
-                  <line x1="188" y1="150" x2="212" y2="150" stroke="#3E413B" stroke-width="1" />
-                  <line x1="188" y1="175" x2="212" y2="175" stroke="#3E413B" stroke-width="1" />
-
-                  <!-- Elegant strings (Cordas) radiating beautifully -->
-                  <line x1="190" y1="0" x2="190" y2="330" stroke="#A6A8A4" stroke-opacity="0.4" stroke-width="0.8" />
-                  <line x1="194" y1="0" x2="194" y2="330" stroke="#DCDED9" stroke-opacity="0.5" stroke-width="0.8" />
-                  <line x1="198" y1="0" x2="198" y2="330" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1" />
-                  <line x1="202" y1="0" x2="202" y2="330" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1" />
-                  <line x1="206" y1="0" x2="206" y2="330" stroke="#DCDED9" stroke-opacity="0.5" stroke-width="0.8" />
-                  <line x1="210" y1="0" x2="210" y2="330" stroke="#A6A8A4" stroke-opacity="0.4" stroke-width="0.8" />
-
-                  <!-- Guitar Bridge (Cavalete) below sound hole -->
-                  <rect x="165" y="310" width="70" height="15" rx="3" fill="#1C1D1B" stroke="#C85A32" stroke-opacity="0.3" stroke-width="1" />
-                  <rect x="180" y="313" width="40" height="5" fill="#FAF8F5" stroke-opacity="0.2" />
-
-                  <!-- Graphic music vibration waves of border unity -->
-                  <path d="M 40,230 Q 110,180 180,230 T 320,230" stroke="url(#goldGlow)" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="6,4" />
-                  <path d="M 60,250 Q 130,280 200,230 T 340,210" stroke="#2B6CB0" stroke-width="1" stroke-opacity="0.2" />
-                </svg>
-
-                <div class="absolute bottom-3 left-3 bg-[#0D0E0C]/90 px-3 py-1 rounded border border-[#20221E] text-[9px] font-mono tracking-widest text-[#FAF8F5]">
-                  7 ANOS • TOQUE DE OUVIDO
+                <div class="relative rounded-2xl overflow-hidden border border-neutral-700/60 shadow-[0_20px_40px_rgba(0,0,0,0.85)] bg-[#0A0B09]">
+                  <img
+                    src="https://danielmellouruguaio.com.br/imagens/capa-livro-a-autobiografia-de-daniel-mello-uruguaio.jpeg"
+                    alt="Capa do livro A Vida Como Ela É - Autobiografia de Daniel Mello Uruguaio"
+                    class="w-full h-auto object-cover select-none block"
+                    loading="eager"
+                  />
+                  <!-- Realistic Book Spine & Edge Highlights Overlay -->
+                  <div class="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/40 via-transparent to-black/20"></div>
+                  <div class="absolute left-0 top-0 bottom-0 w-3 bg-gradient-to-r from-black/60 via-black/20 to-transparent pointer-events-none"></div>
                 </div>
               </div>
 
-              <!-- Compact player control elements representing tracks -->
-              <div class="space-y-2 pt-2">
-                <div class="h-1 bg-neutral-900 rounded-full overflow-hidden">
-                  <div class="h-full bg-gradient-to-r from-brand-terracotta via-brand-yellow to-brand-blue w-2/3 rounded-full animate-pulse"></div>
+              <!-- Direct Purchase Link Boxes beneath the Cover -->
+              <div class="w-full mt-5 pt-3.5 border-t border-[#20221E] space-y-2.5">
+                <span class="block text-center font-mono text-[9px] text-neutral-400 uppercase tracking-widest font-semibold">
+                  Adquira seu exemplar físico:
+                </span>
+                <div class="grid grid-cols-2 gap-2">
+                  <a
+                    href="https://loja.uiclap.com/titulo/ua200240"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="p-2.5 rounded-xl bg-brand-yellow/10 border border-brand-yellow/30 hover:bg-brand-yellow hover:text-black transition-all duration-300 font-mono text-[10px] font-bold uppercase tracking-wider text-brand-yellow flex flex-col items-center justify-center gap-0.5 text-center cursor-pointer shadow-sm"
+                  >
+                    <span class="flex items-center gap-1 text-xs">
+                      🇧🇷 Português
+                    </span>
+                    <span class="text-[8px] opacity-75 font-sans font-normal">loja.uiclap.com</span>
+                  </a>
+
+                  <a
+                    href="https://loja.uiclap.com/titulo/ua200256"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="p-2.5 rounded-xl bg-brand-blue/10 border border-brand-blue/30 hover:bg-brand-blue hover:text-white transition-all duration-300 font-mono text-[10px] font-bold uppercase tracking-wider text-brand-blue flex flex-col items-center justify-center gap-0.5 text-center cursor-pointer shadow-sm"
+                  >
+                    <span class="flex items-center gap-1 text-xs">
+                      🇺🇾 Español
+                    </span>
+                    <span class="text-[8px] opacity-75 font-sans font-normal">loja.uiclap.com</span>
+                  </a>
                 </div>
-                <div class="flex items-center justify-between font-mono text-[8px] text-neutral-500 uppercase tracking-wider">
-                  <span>Música Sem Fronteiras</span>
-                  <span class="text-brand-yellow animate-pulse">Tocando Essência</span>
+
+                <div class="flex items-center justify-center gap-2 pt-1 font-mono text-[9px] text-neutral-400">
+                  <i data-lucide="truck" class="w-3.5 h-3.5 text-brand-yellow"></i>
+                  <span>Impressão sob demanda e envio internacional</span>
                 </div>
               </div>
 
@@ -341,7 +388,7 @@
         <!-- Scrolling guidance arrow -->
         <a
           href="#trajetoria"
-          class="absolute bottom-6 left-1/2 -translate-x-1/2 p-2 rounded-full border border-[#20221E] bg-neutral-900/50 text-neutral-400 hover:text-brand-yellow transition-all duration-300 animate-bounce cursor-pointer z-10"
+          class="absolute bottom-4 left-1/2 -translate-x-1/2 p-2 rounded-full border border-[#20221E] bg-neutral-900/50 text-neutral-400 hover:text-brand-yellow transition-all duration-300 animate-bounce cursor-pointer z-10"
           title="Ver Trajetória"
         >
           <i data-lucide="arrow-down" class="w-4 h-4"></i>
