@@ -1425,130 +1425,108 @@
               </div>
             </div>
 
-            <!-- Column 2: Interactive WhatsApp Assistant + Email Form (7 cols) -->
+            <!-- Column 2: Interactive WhatsApp Assistant & Direct Email (7 cols) -->
             <div class="lg:col-span-7 space-y-6">
               
               <!-- Custom WhatsApp Form Helper -->
-              <div class="bg-neutral-900 border border-[#20221E] p-6 sm:p-8 rounded-3xl shadow-xl space-y-4 text-left">
-                <div class="flex items-center gap-2 text-brand-yellow">
-                  <i data-lucide="message-square-text" class="w-5 h-5"></i>
-                  <h3 class="font-display font-bold text-base uppercase text-white tracking-wider">
-                    Escreva para o WhatsApp do Daniel
-                  </h3>
+              <div class="bg-neutral-900 border border-[#20221E] p-6 sm:p-8 rounded-3xl shadow-xl space-y-5 text-left">
+                <div class="flex items-center justify-between gap-3 flex-wrap">
+                  <div class="flex items-center gap-2 text-brand-yellow">
+                    <i data-lucide="message-square-text" class="w-5 h-5"></i>
+                    <h3 class="font-display font-bold text-base uppercase text-white tracking-wider">
+                      Conversar no WhatsApp
+                    </h3>
+                  </div>
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Resposta Rápida
+                  </span>
                 </div>
-                <p class="font-sans text-xs text-neutral-400">
-                  Escreva sua mensagem abaixo para formatar o texto automaticamente. Você poderá revisar e abrir direto no aplicativo do WhatsApp.
+                <p class="font-sans text-xs text-neutral-400 leading-relaxed">
+                  Escolha um assunto rápido ou escreva sua mensagem personalizada para iniciar a conversa diretamente no WhatsApp oficial do Daniel:
                 </p>
+
+                <!-- Quick Topic Chips -->
+                <div class="space-y-2">
+                  <span class="block font-mono text-[9px] uppercase tracking-widest text-neutral-500 font-bold">Sugestões rápidas:</span>
+                  <div class="flex flex-wrap gap-2">
+                    <button
+                      type="button"
+                      onclick="setWhatsAppTopic('Olá Daniel! Gostaria de consultar datas e propostas para espetáculos e apresentações musicais.')"
+                      class="px-3 py-1.5 rounded-lg bg-neutral-950 border border-[#20221E] hover:border-brand-yellow hover:text-brand-yellow font-sans text-xs text-neutral-300 transition-all cursor-pointer flex items-center gap-1.5"
+                    >
+                      <i data-lucide="music" class="w-3.5 h-3.5 text-brand-yellow"></i>
+                      Shows & Festivais
+                    </button>
+                    <button
+                      type="button"
+                      onclick="setWhatsAppTopic('Olá Daniel! Gostaria de saber mais sobre as oficinas e aulas de violão de ouvido.')"
+                      class="px-3 py-1.5 rounded-lg bg-neutral-950 border border-[#20221E] hover:border-brand-blue hover:text-brand-blue font-sans text-xs text-neutral-300 transition-all cursor-pointer flex items-center gap-1.5"
+                    >
+                      <i data-lucide="disc" class="w-3.5 h-3.5 text-brand-blue"></i>
+                      Oficinas de Violão
+                    </button>
+                    <button
+                      type="button"
+                      onclick="setWhatsAppTopic('Olá Daniel! Gostaria de conversar sobre palestras ou projetos de Economia Solidária e Cooperativismo.')"
+                      class="px-3 py-1.5 rounded-lg bg-neutral-950 border border-[#20221E] hover:border-brand-terracotta hover:text-brand-terracotta font-sans text-xs text-neutral-300 transition-all cursor-pointer flex items-center gap-1.5"
+                    >
+                      <i data-lucide="users" class="w-3.5 h-3.5 text-brand-terracotta"></i>
+                      Economia Solidária
+                    </button>
+                    <button
+                      type="button"
+                      onclick="setWhatsAppTopic('Olá Daniel! Gostaria de falar sobre o Podcast Estación Fronteira ou imprensa.')"
+                      class="px-3 py-1.5 rounded-lg bg-neutral-950 border border-[#20221E] hover:border-brand-yellow hover:text-brand-yellow font-sans text-xs text-neutral-300 transition-all cursor-pointer flex items-center gap-1.5"
+                    >
+                      <i data-lucide="mic" class="w-3.5 h-3.5 text-brand-yellow"></i>
+                      Podcast / Imprensa
+                    </button>
+                  </div>
+                </div>
                 
-                <div class="space-y-3">
+                <div class="space-y-3 pt-1">
                   <textarea
                     id="whatsapp-text-helper"
                     rows="3"
                     class="w-full px-4 py-3 rounded-xl bg-[#0D0E0C] border border-[#20221E] text-white font-sans text-sm focus:outline-none focus:border-brand-yellow transition-colors placeholder:text-neutral-600 resize-none"
-                    placeholder="Olá Daniel! Gostaria de agendar uma oficina de violão no meu festival..."
+                    placeholder="Olá Daniel! Gostaria de conversar sobre..."
                     oninput="updateWhatsAppPreview()"
                   ></textarea>
 
                   <!-- Preview Area -->
-                  <div class="p-4 rounded-xl bg-neutral-950 border border-[#20221E] font-mono text-[10px] leading-relaxed text-neutral-400">
-                    <span class="block text-[8px] uppercase tracking-widest text-neutral-600 font-bold mb-1">Pré-visualização do envio:</span>
-                    <p id="whatsapp-text-preview" class="italic">&ldquo;Olá Daniel! Vim do teu site e gostaria de agendar uma conversa.&rdquo;</p>
+                  <div class="p-3.5 rounded-xl bg-neutral-950 border border-[#20221E] font-mono text-[11px] leading-relaxed text-neutral-400">
+                    <span class="block text-[8px] uppercase tracking-widest text-neutral-600 font-bold mb-1">Pré-visualização da mensagem:</span>
+                    <p id="whatsapp-text-preview" class="italic text-neutral-300">&ldquo;Olá Daniel! Vim do teu site e gostaria de agendar uma conversa.&rdquo;</p>
                   </div>
 
                   <button
                     onclick="sendWhatsAppMessage()"
-                    class="w-full py-3 bg-brand-yellow text-brand-charcoal font-sans text-xs font-bold uppercase tracking-widest rounded-xl hover:bg-white hover:text-brand-charcoal transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                    class="w-full py-3.5 bg-brand-yellow text-brand-charcoal font-sans text-xs font-bold uppercase tracking-widest rounded-xl hover:bg-white hover:text-brand-charcoal transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer shadow-md"
                   >
                     <i data-lucide="send" class="w-4 h-4"></i>
-                    Enviar no WhatsApp
+                    Iniciar Conversa no WhatsApp
                   </button>
                 </div>
               </div>
 
-              <!-- Direct proposal email form -->
-              <div class="bg-neutral-900/40 border border-[#20221E] p-6 sm:p-8 rounded-3xl shadow-xl text-left">
-                <h3 class="font-display font-bold text-base text-white uppercase tracking-wider mb-6">
-                  Ou envie uma proposta detalhada por e-mail
-                </h3>
-
-                <form id="contact-form" onsubmit="simulateFormSubmit(event)" class="space-y-4">
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <!-- Nome -->
-                    <div class="space-y-1.5">
-                      <label for="form-nome" class="block font-sans text-xs font-semibold text-neutral-400">Seu Nome</label>
-                      <input
-                        id="form-nome"
-                        type="text"
-                        required
-                        class="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-[#20221E] text-white font-sans text-sm focus:outline-none focus:border-brand-yellow transition-colors placeholder:text-neutral-600"
-                        placeholder="Ex: João da Silva"
-                      />
-                    </div>
-
-                    <!-- Telefone -->
-                    <div class="space-y-1.5">
-                      <label for="form-telefone" class="block font-sans text-xs font-semibold text-neutral-400">Seu Telefone</label>
-                      <input
-                        id="form-telefone"
-                        type="tel"
-                        required
-                        class="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-[#20221E] text-white font-sans text-sm focus:outline-none focus:border-brand-yellow transition-colors placeholder:text-neutral-600"
-                        placeholder="Ex: (51) 99999-9999"
-                      />
-                    </div>
-                  </div>
-
-                  <!-- Email -->
-                  <div class="space-y-1.5">
-                    <label for="form-email" class="block font-sans text-xs font-semibold text-neutral-400">Seu E-mail</label>
-                    <input
-                      id="form-email"
-                      type="email"
-                      required
-                      class="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-[#20221E] text-white font-sans text-sm focus:outline-none focus:border-brand-yellow transition-colors placeholder:text-neutral-600"
-                      placeholder="Ex: joao@provedor.com"
-                    />
-                  </div>
-
-                  <!-- Interesse -->
-                  <div class="space-y-1.5">
-                    <label for="form-interesse" class="block font-sans text-xs font-semibold text-neutral-400">Qual o seu interesse?</label>
-                    <select
-                      id="form-interesse"
-                      class="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-[#20221E] text-white font-sans text-sm focus:outline-none focus:border-brand-yellow transition-colors cursor-pointer"
-                    >
-                      <option value="shows">Contratar Espetáculo / Apresentações</option>
-                      <option value="podcast">Podcast Estación Fronteira</option>
-                      <option value="solidaria">Economia Solidária & Cooperativismo</option>
-                      <option value="oficina">Aulas de Violão / Oficinas</option>
-                      <option value="outros">Outros Assuntos / Imprensa</option>
-                    </select>
-                  </div>
-
-                  <!-- Mensagem -->
-                  <div class="space-y-1.5">
-                    <label for="form-mensagem" class="block font-sans text-xs font-semibold text-neutral-400">Sua Mensagem</label>
-                    <textarea
-                      id="form-mensagem"
-                      rows="4"
-                      required
-                      class="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-[#20221E] text-white font-sans text-sm focus:outline-none focus:border-brand-yellow transition-colors placeholder:text-neutral-600 resize-none"
-                      placeholder="Escreva detalhadamente sua proposta de parceria comunitária ou comercial..."
-                    ></textarea>
-                  </div>
-
-                  <!-- Form Button Container -->
-                  <div class="pt-2" id="form-button-container">
-                    <button
-                      type="submit"
-                      class="w-full py-3.5 bg-brand-yellow text-brand-charcoal font-sans text-xs font-bold uppercase tracking-widest rounded-xl hover:bg-white transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer shadow-md"
-                    >
-                      <span>Enviar Proposta por E-mail</span>
-                      <i data-lucide="send" class="w-3.5 h-3.5 rotate-45"></i>
-                    </button>
-                  </div>
-
-                </form>
+              <!-- Direct Email Alternative Box -->
+              <div class="bg-neutral-900/40 border border-[#20221E] p-6 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+                <div class="space-y-1">
+                  <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider">
+                    Prefere o canal de e-mail formal?
+                  </h4>
+                  <p class="font-sans text-xs text-neutral-400">
+                    Envie materiais, arquivos ou convites oficiais para <strong class="text-neutral-200">contato@danielmellouruguaio.com.br</strong>
+                  </p>
+                </div>
+                <a
+                  href="mailto:contato@danielmellouruguaio.com.br"
+                  class="shrink-0 px-5 py-2.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-white font-sans text-xs font-bold uppercase tracking-wider border border-[#20221E] transition-colors inline-flex items-center gap-2"
+                >
+                  <i data-lucide="mail" class="w-4 h-4 text-brand-blue"></i>
+                  Abrir E-mail
+                </a>
               </div>
 
             </div>
@@ -1742,6 +1720,15 @@
         }
       }
 
+      function setWhatsAppTopic(text) {
+        const helper = document.getElementById('whatsapp-text-helper');
+        if (helper) {
+          helper.value = text;
+          updateWhatsAppPreview();
+          helper.focus();
+        }
+      }
+
       function sendWhatsAppMessage() {
         const helperText = document.getElementById('whatsapp-text-helper').value;
         const defaultText = "Olá Daniel! Vim do teu site e gostaria de agendar uma conversa.";
@@ -1753,38 +1740,7 @@
         window.open(url, '_blank');
       }
 
-      // 7. Simulated direct proposal submission
-      function simulateFormSubmit(event) {
-        event.preventDefault();
-        const container = document.getElementById('form-button-container');
-        
-        container.innerHTML = `
-          <button type="button" disabled class="w-full py-3.5 bg-brand-yellow/50 text-brand-charcoal rounded-xl font-sans text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2">
-            <span class="w-5 h-5 border-2 border-brand-charcoal border-t-transparent rounded-full animate-spin"></span>
-            Enviando proposta por e-mail...
-          </button>
-        `;
-        
-        setTimeout(() => {
-          container.innerHTML = `
-            <div class="p-4 bg-brand-yellow/20 border border-brand-yellow/40 rounded-xl flex items-center gap-3 text-brand-yellow">
-              <i data-lucide="check-circle" class="w-5 h-5 shrink-0 text-brand-yellow"></i>
-              <span class="font-sans text-xs font-bold uppercase tracking-wider">
-                Proposta enviada com sucesso! Retornaremos o quanto antes.
-              </span>
-            </div>
-          `;
-          lucide.createIcons(); // Re-render check icon
-
-          // Reset fields
-          document.getElementById('form-nome').value = '';
-          document.getElementById('form-telefone').value = '';
-          document.getElementById('form-email').value = '';
-          document.getElementById('form-mensagem').value = '';
-        }, 1500);
-      }
-
-      // 8. Podcast Episode Switcher
+      // 7. Podcast Episode Switcher
       function setPodcastEpisode(videoId, title, epLabel, btnElement) {
         const iframe = document.getElementById('podcast-player-iframe');
         if (iframe) {
