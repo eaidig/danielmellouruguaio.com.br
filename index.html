@@ -122,16 +122,19 @@
           </a>
 
           <!-- Desktop Nav Menu -->
-          <nav class="hidden md:flex items-center gap-8">
+          <nav class="hidden md:flex items-center gap-7">
             <a href="#inicio" class="nav-link text-neutral-400 hover:text-white text-xs font-bold uppercase tracking-widest active">Início</a>
             <a href="#livro" class="nav-link text-brand-yellow hover:text-white text-xs font-bold uppercase tracking-widest flex items-center gap-1.5">
               <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
               O Livro
             </a>
             <a href="#trajetoria" class="nav-link text-neutral-400 hover:text-white text-xs font-bold uppercase tracking-widest">Trajetória</a>
+            <a href="#albuns" class="nav-link text-neutral-400 hover:text-white text-xs font-bold uppercase tracking-widest flex items-center gap-1">
+              <i data-lucide="disc" class="w-3.5 h-3.5 text-brand-yellow"></i>
+              Álbuns
+            </a>
             <a href="#projetos" class="nav-link text-neutral-400 hover:text-white text-xs font-bold uppercase tracking-widest">Projetos</a>
             <a href="#podcast" class="nav-link text-neutral-400 hover:text-white text-xs font-bold uppercase tracking-widest">Podcast</a>
-            <a href="#musica" class="nav-link text-neutral-400 hover:text-white text-xs font-bold uppercase tracking-widest">Música</a>
             <a href="#contato" class="nav-link text-neutral-400 hover:text-white text-xs font-bold uppercase tracking-widest">Contato</a>
           </nav>
 
@@ -171,9 +174,12 @@
             O Livro (Autobiografia)
           </a>
           <a href="#trajetoria" class="mobile-nav-link block px-4 py-3 rounded-xl text-neutral-300 hover:text-white hover:bg-neutral-900 text-xs font-bold uppercase tracking-widest">Trajetória</a>
+          <a href="#albuns" class="mobile-nav-link block px-4 py-3 rounded-xl text-neutral-300 hover:text-white hover:bg-neutral-900 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+            <i data-lucide="disc" class="w-4 h-4 text-brand-yellow"></i>
+            Álbuns (YouTube)
+          </a>
           <a href="#projetos" class="mobile-nav-link block px-4 py-3 rounded-xl text-neutral-300 hover:text-white hover:bg-neutral-900 text-xs font-bold uppercase tracking-widest">Projetos</a>
           <a href="#podcast" class="mobile-nav-link block px-4 py-3 rounded-xl text-neutral-300 hover:text-white hover:bg-neutral-900 text-xs font-bold uppercase tracking-widest">Podcast</a>
-          <a href="#musica" class="mobile-nav-link block px-4 py-3 rounded-xl text-neutral-300 hover:text-white hover:bg-neutral-900 text-xs font-bold uppercase tracking-widest">Música</a>
           <a href="#contato" class="mobile-nav-link block px-4 py-3 rounded-xl text-neutral-300 hover:text-white hover:bg-neutral-900 text-xs font-bold uppercase tracking-widest">Contato</a>
           <a
             href="https://wa.me/555193282401?text=Olá%20Daniel!%20Gostaria%20de%20conversar%20sobre%20um%20show%20ou%20projeto."
@@ -295,13 +301,14 @@
                 <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-60"></i>
               </a>
 
-              <!-- Secondary link: Ouvir Música -->
+              <!-- Secondary link: Clipe Projeto Emigrante -->
               <a
-                href="#musica"
+                href="#projeto-emigrante"
                 class="px-4 py-3.5 bg-neutral-900/60 border border-[#20221E] text-neutral-300 hover:text-white hover:bg-neutral-800 transition-all duration-300 font-sans text-xs font-semibold tracking-wider uppercase rounded-xl flex items-center justify-center gap-2 cursor-pointer"
+                title="Assistir clipe oficial do Projeto Emigrante"
               >
-                <i data-lucide="music-2" class="w-3.5 h-3.5 text-neutral-400"></i>
-                <span>Ouvir Música</span>
+                <i data-lucide="play-circle" class="w-3.5 h-3.5 text-brand-yellow"></i>
+                <span>Clipe &ldquo;Emigrante&rdquo;</span>
               </a>
             </div>
 
@@ -464,13 +471,13 @@
                 </div>
               </div>
 
-              <!-- Editorial Quote Card (Solved positioning) -->
-              <div class="w-full bg-neutral-900/40 border border-[#20221E] rounded-3xl p-6 sm:p-8 relative shadow-lg overflow-hidden flex flex-col justify-center">
+              <!-- Editorial Quote Card -->
+              <div class="w-full bg-neutral-900/60 border border-[#20221E] rounded-3xl p-6 sm:p-7 relative shadow-lg overflow-hidden flex flex-col justify-center">
                 <div class="absolute -top-3 -left-3 text-brand-yellow font-serif text-8xl opacity-5 select-none pointer-events-none">&ldquo;</div>
-                <p class="font-serif italic text-base sm:text-lg text-neutral-200 leading-relaxed relative z-10 text-balance text-left">
+                <p class="font-serif italic text-sm sm:text-base text-neutral-200 leading-relaxed relative z-10 text-balance text-left">
                   &ldquo;Uma jornada de herança cultural e amor à música que dissolve as barreiras geográficas entre o Uruguai e o Rio Grande do Sul, consolidando um intercâmbio artístico vivo.&rdquo;
                 </p>
-                <div class="w-12 h-[1px] bg-brand-terracotta mt-5 relative z-10"></div>
+                <div class="w-12 h-[1px] bg-brand-terracotta mt-4 relative z-10"></div>
               </div>
 
             </div>
@@ -530,6 +537,113 @@
 
           </div>
 
+          <!-- DESTAQUE AUDIOVISUAL: MINI DOCUMENTÁRIO VERTICAL (DIAGRAMAÇÃO DEDICADA E EQUILIBRADA) -->
+          <div class="mt-16 bg-gradient-to-br from-neutral-900 via-neutral-900/90 to-neutral-950 border border-brand-yellow/30 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
+            <!-- Decorative subtle radial glow -->
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-yellow/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-terracotta/5 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+              
+              <!-- Video Frame (Vertical 9:16) - 4 cols on desktop -->
+              <div class="lg:col-span-5 xl:col-span-4 flex flex-col items-center justify-center">
+                <div class="w-full max-w-[280px] sm:max-w-[300px] bg-neutral-950 p-3 rounded-[2.5rem] border-2 border-brand-yellow/40 shadow-2xl relative shadow-brand-yellow/5">
+                  <!-- Phone speaker notch simulation -->
+                  <div class="w-16 h-1 bg-neutral-800 rounded-full mx-auto mb-2.5"></div>
+                  
+                  <!-- Video Embed (9:16) -->
+                  <div class="relative w-full aspect-[9/16] rounded-2xl overflow-hidden bg-black shadow-inner">
+                    <iframe
+                      class="w-full h-full"
+                      src="https://www.youtube.com/embed/SgiVtp9UFjg"
+                      title="Mini Documentário - A História de Daniel Mello"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  
+                  <!-- Phone bottom bar -->
+                  <div class="w-24 h-1 bg-neutral-800 rounded-full mx-auto mt-2.5"></div>
+                </div>
+
+                <div class="mt-3 flex items-center gap-2 font-mono text-[10px] text-brand-yellow">
+                  <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                  <span class="font-bold uppercase tracking-wider">Mini Documentário Vertical (9:16)</span>
+                </div>
+              </div>
+
+              <!-- Editorial Context & Highlights - 8 cols on desktop -->
+              <div class="lg:col-span-7 xl:col-span-8 text-left space-y-5">
+                <div class="flex flex-wrap items-center gap-2.5">
+                  <span class="bg-red-600/20 text-red-400 border border-red-500/30 text-[10px] font-mono uppercase tracking-widest px-3 py-1 rounded-full font-bold flex items-center gap-1.5">
+                    <i data-lucide="play" class="w-3 h-3 fill-current"></i>
+                    Depoimento em Vídeo
+                  </span>
+                  <span class="bg-neutral-800 text-neutral-300 text-[10px] font-mono uppercase tracking-wider px-3 py-1 rounded-full border border-neutral-700">
+                    História de Vida em Primeira Pessoa
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="font-display font-black text-2xl sm:text-3xl lg:text-4xl text-white uppercase tracking-tight leading-tight">
+                    A Voz da Fronteira: Da Infância aos Palcos
+                  </h3>
+                  <p class="font-sans text-neutral-300 text-sm sm:text-base leading-relaxed mt-2 text-balance">
+                    Neste mini documentário em formato vertical, Daniel Mello percorre suas memórias mais íntimas: os primeiros acordes aos 7 anos em Artigas, os festivais do Uruguai, o polêmico episódio de Durazno e a decisão inegociável de transformar cada obstáculo em motivo para continuar cantando.
+                  </p>
+                </div>
+
+                <!-- 3 Editorial Highlights Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+                  <div class="bg-neutral-950/70 border border-[#20221E] rounded-xl p-3.5 hover:border-brand-yellow/30 transition-colors">
+                    <span class="font-mono text-brand-yellow text-xs font-bold block mb-1">01. As Raízes</span>
+                    <h5 class="text-xs font-bold text-white mb-1">Toque de Ouvido</h5>
+                    <p class="text-[11px] text-neutral-400 leading-snug">Aos 7 anos, na fronteira entre Artigas e Quaraí, descobrindo o dom que guiaria sua vida.</p>
+                  </div>
+                  <div class="bg-neutral-950/70 border border-[#20221E] rounded-xl p-3.5 hover:border-brand-blue/30 transition-colors">
+                    <span class="font-mono text-brand-blue text-xs font-bold block mb-1">02. A Prova</span>
+                    <h5 class="text-xs font-bold text-white mb-1">A Lição de Durazno</h5>
+                    <p class="text-[11px] text-neutral-400 leading-snug">Quando a vida não dá o troféu sonhado, mas ensina a maior lição de resiliência e integridade.</p>
+                  </div>
+                  <div class="bg-neutral-950/70 border border-[#20221E] rounded-xl p-3.5 hover:border-brand-terracotta/30 transition-colors">
+                    <span class="font-mono text-brand-terracotta text-xs font-bold block mb-1">03. O Legado</span>
+                    <h5 class="text-xs font-bold text-white mb-1">Voz Comunitária</h5>
+                    <p class="text-[11px] text-neutral-400 leading-snug">Microfone como dever ético: ser a voz dos boicotados, esquecidos e sem voz.</p>
+                  </div>
+                </div>
+
+                <!-- Direct Quote -->
+                <blockquote class="border-l-2 border-brand-yellow pl-4 py-1 italic font-serif text-sm sm:text-base text-neutral-200">
+                  &ldquo;Escrevi e canto para quem já perdeu um 'Durazno' na vida. Para quem já foi boicotado ou esquecido — e ainda assim escolheu continuar cantando.&rdquo;
+                </blockquote>
+
+                <!-- Actions -->
+                <div class="flex flex-wrap items-center gap-3 pt-2">
+                  <a
+                    href="https://www.youtube.com/watch?v=SgiVtp9UFjg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-mono text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-xl transition-all shadow-lg hover:shadow-red-600/30"
+                  >
+                    <i data-lucide="play-circle" class="w-4 h-4"></i>
+                    <span>Assistir no YouTube</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-70"></i>
+                  </a>
+                  <a
+                    href="#livro-autobiografia"
+                    class="inline-flex items-center gap-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 hover:text-white font-mono text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-xl border border-neutral-700 hover:border-neutral-500 transition-all"
+                  >
+                    <i data-lucide="book-open" class="w-4 h-4 text-brand-yellow"></i>
+                    <span>Ler na Autobiografia</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
           <!-- Key Metrics Grid -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             <!-- Metric 1 -->
@@ -569,69 +683,242 @@
             </div>
           </div>
 
-          <!-- Historic Discography Cards Box -->
-          <div class="border-t border-[#20221E]/60 pt-16 mt-16">
-            <h3 class="font-display font-bold text-sm text-neutral-400 text-center uppercase tracking-widest mb-10">
-              Registros Históricos de Lançamentos
-            </h3>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              
-              <!-- Box 1 -->
-              <div class="bg-neutral-900/90 p-4 rounded-2xl border border-[#20221E] flex flex-col justify-between">
-                <div class="aspect-square w-full rounded-xl overflow-hidden bg-neutral-950 border border-[#20221E] flex flex-col justify-center items-center text-center p-4">
-                  <div class="w-10 h-10 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 flex items-center justify-center text-brand-yellow mb-3">
-                    <i data-lucide="newspaper" class="w-4 h-4"></i>
-                  </div>
-                  <h4 class="font-sans font-bold text-xs text-white mb-1">Volviendo al Sur</h4>
-                  <p class="font-sans text-[10px] text-neutral-400 leading-relaxed max-w-[180px]">
-                    Recorte de jornal de Montevidéu divulgando o lançamento do CD e o retorno às origens.
-                  </p>
-                  <div class="mt-3 font-mono text-[8px] bg-brand-charcoal border border-[#20221E] px-2 py-0.5 rounded text-neutral-500">500 x 500 px</div>
-                </div>
-                <div class="mt-3 text-center">
-                  <span class="font-sans font-semibold text-xs text-white block">Volviendo al Sur</span>
-                  <span class="font-mono text-[8px] text-neutral-500 uppercase tracking-wider">Acervo Impresso</span>
-                </div>
-              </div>
+        </div>
+      </section>
 
-              <!-- Box 2 -->
-              <div class="bg-neutral-900/90 p-4 rounded-2xl border border-[#20221E] flex flex-col justify-between">
-                <div class="aspect-square w-full rounded-xl overflow-hidden bg-neutral-950 border border-[#20221E] flex flex-col justify-center items-center text-center p-4">
-                  <div class="w-10 h-10 rounded-full bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue mb-3">
-                    <i data-lucide="library" class="w-4 h-4"></i>
-                  </div>
-                  <h4 class="font-sans font-bold text-xs text-white mb-1">Cosiendo Fronteras</h4>
-                  <p class="font-sans text-[10px] text-neutral-400 leading-relaxed max-w-[180px]">
-                    Reunião de folhetos, partituras e canções integradas do projeto de união de povos.
-                  </p>
-                  <div class="mt-3 font-mono text-[8px] bg-brand-charcoal border border-[#20221E] px-2 py-0.5 rounded text-neutral-500">500 x 500 px</div>
-                </div>
-                <div class="mt-3 text-center">
-                  <span class="font-sans font-semibold text-xs text-white block">Cosiendo Fronteras</span>
-                  <span class="font-mono text-[8px] text-neutral-500 uppercase tracking-wider">Intercâmbio Musical</span>
-                </div>
-              </div>
+      <!-- SECTION: ÁLBUNS & DISCOGRAFIA (3 PLAYERS DO YOUTUBE) -->
+      <section id="albuns" class="py-20 bg-neutral-900/40 border-b border-[#20221E]/60 relative overflow-hidden">
+        <!-- Subtle radial gradients for atmosphere -->
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-brand-yellow/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-brand-blue/5 rounded-full blur-3xl pointer-events-none"></div>
 
-              <!-- Box 3 -->
-              <div class="bg-neutral-900/90 p-4 rounded-2xl border border-[#20221E] flex flex-col justify-between">
-                <div class="aspect-square w-full rounded-xl overflow-hidden bg-neutral-950 border border-[#20221E] flex flex-col justify-center items-center text-center p-4">
-                  <div class="w-10 h-10 rounded-full bg-brand-terracotta/10 border border-brand-terracotta/20 flex items-center justify-center text-brand-terracotta mb-3">
-                    <i data-lucide="disc" class="w-4 h-4"></i>
-                  </div>
-                  <h4 class="font-sans font-bold text-xs text-white mb-1">Tiempo de Luna</h4>
-                  <p class="font-sans text-[10px] text-neutral-400 leading-relaxed max-w-[180px]">
-                    Encarte físico do álbum solo com canções de autoria de Daniel na fronteira.
-                  </p>
-                  <div class="mt-3 font-mono text-[8px] bg-brand-charcoal border border-[#20221E] px-2 py-0.5 rounded text-neutral-500">500 x 500 px</div>
-                </div>
-                <div class="mt-3 text-center">
-                  <span class="font-sans font-semibold text-xs text-white block">Tiempo de Luna</span>
-                  <span class="font-mono text-[8px] text-neutral-500 uppercase tracking-wider">Álbum Autoral</span>
-                </div>
-              </div>
-
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-neutral-900 border border-brand-yellow/30 rounded-full text-brand-yellow font-mono text-[10px] uppercase tracking-widest mb-3 shadow-inner">
+              <i data-lucide="disc" class="w-3.5 h-3.5 text-brand-yellow"></i>
+              Discografia Oficial • YouTube Playlists
             </div>
+            <h2 class="font-display font-black text-3xl sm:text-4xl md:text-5xl text-[#FAF8F5] mb-4 uppercase tracking-tight">
+              Álbuns de Daniel Mello
+            </h2>
+            <div class="w-20 h-1 bg-brand-yellow mx-auto rounded-full mb-6"></div>
+            <p class="font-sans text-neutral-300 text-sm sm:text-base leading-relaxed text-balance">
+              Três registros fundamentais da obra de Daniel Mello disponíveis em playlists completas no YouTube. Ouça os álbuns na íntegra, faixa a faixa, com a sonoridade autêntica da fronteira e a riqueza do cancioneiro latino-americano.
+            </p>
+          </div>
+
+          <!-- 3 Album Players Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- Álbum 1: Soy Emigrante -->
+            <div class="bg-neutral-900 border border-[#20221E] rounded-3xl p-5 sm:p-6 shadow-xl flex flex-col justify-between hover:border-brand-yellow/50 transition-all duration-300 group">
+              <div class="space-y-4">
+                <!-- Top strip & badges -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-brand-yellow"></span>
+                    <span class="font-mono text-[10px] uppercase tracking-widest font-bold text-brand-yellow">
+                      Álbum 01
+                    </span>
+                  </div>
+                  <span class="font-mono text-[9px] text-neutral-400 uppercase tracking-wider bg-neutral-950 border border-[#20221E] px-2.5 py-0.5 rounded-full">
+                    Playlist Oficial
+                  </span>
+                </div>
+
+                <!-- YouTube Embed with Playlist -->
+                <div class="aspect-video w-full rounded-2xl overflow-hidden bg-black border border-[#20221E] shadow-2xl relative group-hover:border-brand-yellow/40 transition-colors">
+                  <iframe
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/TWnaGWUOFRw?list=PLW8hqyKewTRq_H0iGlLucIhWXZiqxv9CS"
+                    title="Álbum Soy Emigrante - Daniel Mello"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <!-- Info & Description -->
+                <div class="space-y-2 text-left pt-1">
+                  <h3 class="font-display font-black text-xl text-white uppercase tracking-tight flex items-center justify-between">
+                    <span>Soy Emigrante</span>
+                    <i data-lucide="music-2" class="w-4 h-4 text-brand-yellow"></i>
+                  </h3>
+                  <p class="font-mono text-[10px] text-brand-terracotta font-bold uppercase tracking-wider">
+                    Fusão Cultural • Canto de Resistência
+                  </p>
+                  <p class="font-sans text-xs sm:text-sm text-neutral-400 leading-relaxed">
+                    Álbum marcante que reúne a sonoridade de raiz, violão latino-americano e temas de integração humana e fronteiriça, unindo tradição e consciência social.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Action Link -->
+              <div class="pt-5 mt-4 border-t border-[#20221E]/60 flex items-center justify-between">
+                <a
+                  href="https://www.youtube.com/watch?v=TWnaGWUOFRw&list=PLW8hqyKewTRq_H0iGlLucIhWXZiqxv9CS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 font-mono text-xs font-bold text-brand-yellow hover:text-white uppercase tracking-wider transition-colors cursor-pointer group-hover:translate-x-0.5"
+                >
+                  <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
+                  <span>Ouvir no YouTube</span>
+                  <i data-lucide="external-link" class="w-3 h-3 opacity-70"></i>
+                </a>
+                <span class="font-mono text-[9px] text-neutral-500">YouTube Playlist</span>
+              </div>
+            </div>
+
+            <!-- Álbum 2: Tiempo de Luna -->
+            <div class="bg-neutral-900 border border-[#20221E] rounded-3xl p-5 sm:p-6 shadow-xl flex flex-col justify-between hover:border-brand-blue/50 transition-all duration-300 group">
+              <div class="space-y-4">
+                <!-- Top strip & badges -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-brand-blue"></span>
+                    <span class="font-mono text-[10px] uppercase tracking-widest font-bold text-brand-blue">
+                      Álbum 02
+                    </span>
+                  </div>
+                  <span class="font-mono text-[9px] text-neutral-400 uppercase tracking-wider bg-neutral-950 border border-[#20221E] px-2.5 py-0.5 rounded-full">
+                    Playlist Oficial
+                  </span>
+                </div>
+
+                <!-- YouTube Embed with Playlist -->
+                <div class="aspect-video w-full rounded-2xl overflow-hidden bg-black border border-[#20221E] shadow-2xl relative group-hover:border-brand-blue/40 transition-colors">
+                  <iframe
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/vAhPTL0MHFU?list=PLW8hqyKewTRogw0UOdJWrDslhEDo0GvjY"
+                    title="Álbum Tiempo de Luna - Daniel Mello"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <!-- Info & Description -->
+                <div class="space-y-2 text-left pt-1">
+                  <h3 class="font-display font-black text-xl text-white uppercase tracking-tight flex items-center justify-between">
+                    <span>Tiempo de Luna</span>
+                    <i data-lucide="moon" class="w-4 h-4 text-brand-blue"></i>
+                  </h3>
+                  <p class="font-mono text-[10px] text-brand-blue font-bold uppercase tracking-wider">
+                    Poética do Pampa • Milongas & Serenatas
+                  </p>
+                  <p class="font-sans text-xs sm:text-sm text-neutral-400 leading-relaxed">
+                    Um dos trabalhos mais líricos e aclamados de sua trajetória solo. Traduz a serenidade e a introspecção das noites pampeanas através de acordes sensíveis e letras viscerais.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Action Link -->
+              <div class="pt-5 mt-4 border-t border-[#20221E]/60 flex items-center justify-between">
+                <a
+                  href="https://www.youtube.com/watch?v=vAhPTL0MHFU&list=PLW8hqyKewTRogw0UOdJWrDslhEDo0GvjY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 font-mono text-xs font-bold text-brand-blue hover:text-white uppercase tracking-wider transition-colors cursor-pointer group-hover:translate-x-0.5"
+                >
+                  <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
+                  <span>Ouvir no YouTube</span>
+                  <i data-lucide="external-link" class="w-3 h-3 opacity-70"></i>
+                </a>
+                <span class="font-mono text-[9px] text-neutral-500">YouTube Playlist</span>
+              </div>
+            </div>
+
+            <!-- Álbum 3: Memorial Daniel Mello -->
+            <div class="bg-neutral-900 border border-[#20221E] rounded-3xl p-5 sm:p-6 shadow-xl flex flex-col justify-between hover:border-brand-terracotta/50 transition-all duration-300 group">
+              <div class="space-y-4">
+                <!-- Top strip & badges -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-brand-terracotta"></span>
+                    <span class="font-mono text-[10px] uppercase tracking-widest font-bold text-brand-terracotta">
+                      Álbum 03
+                    </span>
+                  </div>
+                  <span class="font-mono text-[9px] text-neutral-400 uppercase tracking-wider bg-neutral-950 border border-[#20221E] px-2.5 py-0.5 rounded-full">
+                    Acervo Histórico
+                  </span>
+                </div>
+
+                <!-- YouTube Embed with Playlist -->
+                <div class="aspect-video w-full rounded-2xl overflow-hidden bg-black border border-[#20221E] shadow-2xl relative group-hover:border-brand-terracotta/40 transition-colors">
+                  <iframe
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/x0Jposiyax4?list=PLW8hqyKewTRpl2tzUiML-hYJuq4NMky5Z"
+                    title="Memorial Daniel Mello - Acervo Histórico"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <!-- Info & Description -->
+                <div class="space-y-2 text-left pt-1">
+                  <h3 class="font-display font-black text-xl text-white uppercase tracking-tight flex items-center justify-between">
+                    <span>Memorial Daniel Mello</span>
+                    <i data-lucide="archive" class="w-4 h-4 text-brand-terracotta"></i>
+                  </h3>
+                  <p class="font-mono text-[10px] text-brand-yellow font-bold uppercase tracking-wider">
+                    Memória Viva • Gravações Especiais
+                  </p>
+                  <p class="font-sans text-xs sm:text-sm text-neutral-400 leading-relaxed">
+                    Uma antologia comemorativa que resgata faixas raras, momentos de rádio e as canções mais lembradas que consagraram Daniel Mello em mais de quatro décadas de caminhada.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Action Link -->
+              <div class="pt-5 mt-4 border-t border-[#20221E]/60 flex items-center justify-between">
+                <a
+                  href="https://www.youtube.com/watch?v=x0Jposiyax4&list=PLW8hqyKewTRpl2tzUiML-hYJuq4NMky5Z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 font-mono text-xs font-bold text-brand-terracotta hover:text-white uppercase tracking-wider transition-colors cursor-pointer group-hover:translate-x-0.5"
+                >
+                  <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
+                  <span>Ouvir no YouTube</span>
+                  <i data-lucide="external-link" class="w-3 h-3 opacity-70"></i>
+                </a>
+                <span class="font-mono text-[9px] text-neutral-500">YouTube Playlist</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Banner: YouTube Channel CTA -->
+          <div class="mt-12 bg-neutral-900 border border-[#20221E] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-red-600/10 border border-red-500/20 flex items-center justify-center shrink-0">
+                <i data-lucide="youtube" class="w-6 h-6 text-red-500"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-base text-white uppercase tracking-wide">
+                  Inscreva-se no Canal Oficial no YouTube
+                </h4>
+                <p class="font-sans text-xs sm:text-sm text-neutral-400 mt-0.5">
+                  Acesse toda a discografia, apresentações ao vivo, entrevistas e novos lançamentos musicais.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://www.youtube.com/watch?v=TWnaGWUOFRw&list=PLW8hqyKewTRq_H0iGlLucIhWXZiqxv9CS"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-mono text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-red-600/30 shrink-0 cursor-pointer"
+            >
+              <i data-lucide="play-circle" class="w-4 h-4"></i>
+              <span>Abrir Playlists no YouTube</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-70"></i>
+            </a>
           </div>
 
         </div>
@@ -697,43 +984,7 @@
             </div>
           </div>
 
-          <!-- Creative Gallery Representation Boxes -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
-            <!-- Frame 1 -->
-            <div class="bg-neutral-900 p-3 rounded-2xl border border-[#20221E]">
-              <div class="aspect-[4/3] rounded-xl overflow-hidden bg-neutral-950 border border-[#20221E] flex flex-col justify-center items-center text-center p-4">
-                <i data-lucide="mic" class="w-7 h-7 text-neutral-600 mb-2"></i>
-                <h5 class="font-sans font-bold text-[10px] uppercase text-white mb-1">Apresentação: Mezcla Latina</h5>
-                <p class="font-sans text-[9px] text-neutral-500 leading-relaxed max-w-[180px]">Registro do grande espetáculo musical integrando ritmos latinos no palco.</p>
-                <div class="mt-2.5 font-mono text-[8px] bg-[#0D0E0C] border border-[#20221E] px-2 py-0.5 rounded text-neutral-500">640 x 480 px</div>
-              </div>
-              <p class="font-mono text-[9px] uppercase tracking-wider text-neutral-500 mt-2.5 text-center">Espetáculo Mezcla Latina</p>
-            </div>
-
-            <!-- Frame 2 -->
-            <div class="bg-neutral-900 p-3 rounded-2xl border border-[#20221E]">
-              <div class="aspect-[4/3] rounded-xl overflow-hidden bg-neutral-950 border border-[#20221E] flex flex-col justify-center items-center text-center p-4">
-                <i data-lucide="headphones" class="w-7 h-7 text-neutral-600 mb-2"></i>
-                <h5 class="font-sans font-bold text-[10px] uppercase text-white mb-1">Bastidores: Gravações</h5>
-                <p class="font-sans text-[9px] text-neutral-500 leading-relaxed max-w-[180px]">Daniel em cabine profissional capturando vozes para seu acervo de canções.</p>
-                <div class="mt-2.5 font-mono text-[8px] bg-[#0D0E0C] border border-[#20221E] px-2 py-0.5 rounded text-neutral-500">640 x 480 px</div>
-              </div>
-              <p class="font-mono text-[9px] uppercase tracking-wider text-neutral-500 mt-2.5 text-center">Bastidores de Estúdio</p>
-            </div>
-
-            <!-- Frame 3 -->
-            <div class="bg-neutral-900 p-3 rounded-2xl border border-[#20221E]">
-              <div class="aspect-[4/3] rounded-xl overflow-hidden bg-neutral-950 border border-[#20221E] flex flex-col justify-center items-center text-center p-4">
-                <i data-lucide="users" class="w-7 h-7 text-neutral-600 mb-2"></i>
-                <h5 class="font-sans font-bold text-[10px] uppercase text-white mb-1">Palco: Cantar em Família</h5>
-                <p class="font-sans text-[9px] text-neutral-500 leading-relaxed max-w-[180px]">A herança do cantar de ouvido compartilhada com suas filhas no palco.</p>
-                <div class="mt-2.5 font-mono text-[8px] bg-[#0D0E0C] border border-[#20221E] px-2 py-0.5 rounded text-neutral-500">640 x 480 px</div>
-              </div>
-              <p class="font-mono text-[9px] uppercase tracking-wider text-neutral-500 mt-2.5 text-center">Apresentação com Filhas</p>
-            </div>
-          </div>
-
-          <!-- SPOTLIGHT SPECIAL PROJECT: O EMIGRANTE -->
+          <!-- SPOTLIGHT SPECIAL PROJECT: EMIGRANTE -->
           <div id="projeto-emigrante" class="bg-neutral-900 border border-[#20221E] rounded-3xl p-6 sm:p-10 shadow-lg relative overflow-hidden">
             <!-- Color strip header -->
             <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-yellow via-brand-terracotta to-brand-blue"></div>
@@ -748,7 +999,7 @@
                 </div>
                 
                 <h3 class="font-display font-black text-2xl sm:text-3xl text-white uppercase leading-tight">
-                  Projeto &ldquo;O Emigrante&rdquo;
+                  Projeto &ldquo;Emigrante&rdquo;
                 </h3>
                 
                 <p class="font-mono text-xs font-bold text-brand-yellow uppercase tracking-widest flex items-center justify-center lg:justify-start gap-1.5">
@@ -760,7 +1011,7 @@
                   Uma fusão cultural de vanguarda que une as melodias tradicionais e andinas de Daniel Mello ao <span class="font-semibold text-white">rap lírico e urbano gaúcho</span> de Rafa Rafuagi.
                 </p>
                 <p class="font-sans text-neutral-400 text-xs sm:text-sm leading-relaxed">
-                  Gravado no aclamado <span class="font-semibold text-white">Estúdio Continuum</span>, a obra discute o impacto social, psicológico e político da imigração no mundo. Através de poesia forte e acordes autênticos, &ldquo;O Emigrante&rdquo; denuncia a xenofobia e nos recorda que, na busca por dignidade, todos partilhamos do mesmo solo em essência.
+                  Gravado no aclamado <span class="font-semibold text-white">Estúdio Continuum</span>, a obra discute o impacto social, psicológico e político da imigração no mundo. Através de poesia forte e acordes autênticos, &ldquo;Emigrante&rdquo; denuncia a xenofobia e nos recorda que, na busca por dignidade, todos partilhamos do mesmo solo em essência.
                 </p>
 
                 <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-3">
@@ -776,22 +1027,35 @@
                 </div>
               </div>
 
-              <!-- Right: Archive Visual representing Page 4 of the PDF portfolio -->
+              <!-- Right: Videoclipe Oficial YouTube Embed -->
               <div class="lg:col-span-5 w-full">
-                <div class="bg-neutral-950 p-3 rounded-2xl border border-[#20221E]">
-                  <div class="aspect-[4/3] rounded-xl overflow-hidden bg-brand-charcoal border border-[#20221E] flex flex-col justify-center items-center text-center p-4 min-h-[190px]">
-                    <div class="w-10 h-10 rounded-full bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-blue mb-3">
-                      <i data-lucide="headphones" class="w-5 h-5"></i>
-                    </div>
-                    <h6 class="font-sans font-bold text-[10px] uppercase text-white mb-1.5">Sessão: Daniel & Rafa</h6>
-                    <p class="font-sans text-[9px] text-neutral-500 leading-normal max-w-xs">
-                      Fotografia de acervo físico retratando a parceria criativa de gravação no Estúdio Continuum (Portfólio pág 4).
-                    </p>
-                    <div class="mt-2.5 font-mono text-[8px] bg-neutral-900 border border-[#20221E] px-2 py-0.5 rounded text-neutral-500">600 x 450 px</div>
+                <div class="bg-neutral-950 p-2.5 sm:p-3 rounded-2xl border border-[#20221E] shadow-2xl relative group">
+                  <div class="aspect-video w-full rounded-xl overflow-hidden bg-neutral-900 border border-[#20221E] relative">
+                    <iframe
+                      class="w-full h-full"
+                      src="https://www.youtube.com/embed/TWnaGWUOFRw"
+                      title="Clipe Oficial - Daniel Mello e Rafa Rafuagi - Emigrante"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
                   </div>
-                  <p class="text-[9px] font-mono text-center text-neutral-500 uppercase tracking-wider mt-3">
-                    Gravação no Estúdio Continuum
-                  </p>
+                  <div class="flex items-center justify-between mt-3 px-1">
+                    <span class="text-[10px] font-mono text-neutral-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <i data-lucide="youtube" class="w-3.5 h-3.5 text-red-500"></i>
+                      Videoclipe Oficial
+                    </span>
+                    <a
+                      href="https://www.youtube.com/watch?v=TWnaGWUOFRw"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="text-[10px] font-mono text-brand-yellow hover:text-white uppercase tracking-wider flex items-center gap-1 transition-colors"
+                    >
+                      <span>Assistir no YouTube</span>
+                      <i data-lucide="external-link" class="w-3 h-3"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -802,457 +1066,290 @@
       </section>
 
       <!-- SECTION 4: PODCAST "ESTACIÓN FRONTEIRA" -->
-      <section id="podcast" class="py-20 bg-neutral-950 border-t border-b border-[#20221E]/60 relative overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(229,169,0,0.02),transparent_40%)] pointer-events-none"></div>
+      <section id="podcast" class="py-20 bg-neutral-950 border-t border-b border-[#20221E]/60 relative overflow-hidden scroll-mt-16">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(229,169,0,0.03),transparent_50%)] pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-14 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-terracotta/10 border border-brand-terracotta/25 text-brand-terracotta">
+              <i data-lucide="radio" class="w-3.5 h-3.5"></i>
+              <span class="font-mono text-xs font-bold uppercase tracking-widest">Comunicação & Cidadania</span>
+            </div>
+            <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white leading-tight">
+              Podcast &ldquo;Estación Fronteira&rdquo;
+            </h2>
+            <div class="w-16 h-1 bg-brand-terracotta rounded-full mx-auto"></div>
+            <p class="font-sans text-sm sm:text-base text-neutral-300 leading-relaxed">
+              Um autêntico canal de resgate, salvaguarda de memórias e promoção social criado por Daniel Mello. O projeto une a música tradicional gaúcha e uruguaia a relatos, causos e depoimentos sobre economia cooperativa e união dos povos da fronteira.
+            </p>
+          </div>
+
+          <!-- Main Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
-            <!-- Column 1: Breathtaking Pure SVG Landscape representing the PDF Page 5 concept (5 cols) -->
-            <!-- Sunset over Pampa, train tracks, man sitting on a rail drinking mate at sunset -->
-            <div class="lg:col-span-5 order-2 lg:order-1 flex flex-col items-center">
-              <div class="w-full bg-brand-charcoal p-4 rounded-3xl border border-[#20221E] shadow-xl relative">
+            <!-- Column 1: YouTube Playlist Player (7 cols) -->
+            <div class="lg:col-span-7 space-y-6">
+              
+              <!-- Player Container Card -->
+              <div class="bg-neutral-900 border border-[#20221E] rounded-3xl p-4 sm:p-6 shadow-2xl relative group hover:border-brand-terracotta/40 transition-all duration-300">
                 
-                <div class="absolute top-6 left-6 z-20 flex gap-1 h-6 items-end pointer-events-none">
-                  <span class="w-1 bg-brand-yellow h-3 animate-pulse rounded-full"></span>
-                  <span class="w-1 bg-brand-yellow h-5 animate-pulse rounded-full"></span>
-                  <span class="w-1 bg-brand-yellow h-2 animate-pulse rounded-full"></span>
-                  <span class="w-1 bg-brand-yellow h-6 animate-pulse rounded-full"></span>
+                <!-- Player Header -->
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-[#20221E]">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></span>
+                    <span class="font-mono text-xs font-bold text-white uppercase tracking-wider">Podcast Estación Fronteira</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-neutral-950 border border-[#20221E]">
+                    <span class="w-1 bg-brand-yellow h-2.5 animate-pulse rounded-full"></span>
+                    <span class="w-1 bg-brand-yellow h-4 animate-pulse rounded-full"></span>
+                    <span class="w-1 bg-brand-yellow h-2 animate-pulse rounded-full"></span>
+                    <span class="w-1 bg-brand-yellow h-3.5 animate-pulse rounded-full"></span>
+                    <span id="podcast-current-badge" class="font-mono text-[10px] text-brand-yellow uppercase tracking-widest ml-1 font-bold">Episódio 13 (Destaque)</span>
+                  </div>
                 </div>
 
-                <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-b from-[#181A17] to-[#0A0B09] border border-[#20221E] flex flex-col justify-end items-center relative min-h-[260px]">
+                <!-- Current Episode Title Bar -->
+                <div class="mb-3 flex items-center justify-between gap-2 text-left">
+                  <div class="flex items-center gap-2 truncate">
+                    <i data-lucide="headphones" class="w-4 h-4 text-brand-terracotta shrink-0"></i>
+                    <span id="podcast-current-title" class="font-sans text-xs sm:text-sm font-semibold text-neutral-200 truncate">
+                      Episódio 13 - Podcast Estación Fronteira con Daniel Mello Uruguaio
+                    </span>
+                  </div>
+                </div>
+
+                <!-- 16:9 Responsive Video Embed -->
+                <div class="aspect-video w-full rounded-2xl overflow-hidden bg-black shadow-inner border border-neutral-800 relative">
+                  <iframe
+                    id="podcast-player-iframe"
+                    src="https://www.youtube.com/embed/VNJ4plwx_7o?rel=0"
+                    title="Episódio 13 - Podcast Estación Fronteira con Daniel Mello Uruguaio"
+                    class="w-full h-full border-0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+
+                <!-- Episode Quick-Selector Pills -->
+                <div class="mt-4 pt-3 border-t border-[#20221E]/80">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="font-mono text-[10px] text-neutral-400 uppercase tracking-wider font-bold flex items-center gap-1.5">
+                      <i data-lucide="list" class="w-3.5 h-3.5 text-brand-terracotta"></i>
+                      Selecionar Episódio no Player:
+                    </span>
+                    <span class="font-mono text-[9px] text-neutral-500">18+ episódios gravados</span>
+                  </div>
                   
-                  <!-- Sunset & Pampa Landscape SVG -->
-                  <svg viewBox="0 0 400 300" class="absolute inset-0 w-full h-full select-none" xmlns="http://www.w3.org/2000/svg">
+                  <div class="flex items-center gap-2 overflow-x-auto pb-1.5 scrollbar-thin">
+                    <button
+                      type="button"
+                      onclick="setPodcastEpisode('VNJ4plwx_7o', 'Episódio 13 - Podcast Estación Fronteira con Daniel Mello Uruguaio', '13 (Destaque)', this)"
+                      class="podcast-ep-btn px-3 py-1.5 rounded-xl bg-brand-terracotta text-white border border-brand-terracotta font-mono text-[11px] font-bold whitespace-nowrap cursor-pointer hover:brightness-110 transition-all flex items-center gap-1.5 shadow-sm"
+                    >
+                      <i data-lucide="play" class="w-3 h-3 fill-current"></i>
+                      <span>Ep. 13</span>
+                    </button>
+                    <button
+                      type="button"
+                      onclick="setPodcastEpisode('1QUZ_XmBknI', 'Episódio 12 - Podcast Estación Fronteira con Daniel Mello Uruguaio', '12', this)"
+                      class="podcast-ep-btn px-3 py-1.5 rounded-xl bg-neutral-950 text-neutral-300 border border-[#20221E] font-mono text-[11px] font-bold whitespace-nowrap cursor-pointer hover:border-brand-terracotta/50 hover:text-white transition-all flex items-center gap-1.5"
+                    >
+                      <i data-lucide="play" class="w-3 h-3"></i>
+                      <span>Ep. 12</span>
+                    </button>
+                    <button
+                      type="button"
+                      onclick="setPodcastEpisode('olNOGaBZU6U', 'Episódio 11 - Podcast Estación Fronteira con Daniel Mello Uruguaio', '11', this)"
+                      class="podcast-ep-btn px-3 py-1.5 rounded-xl bg-neutral-950 text-neutral-300 border border-[#20221E] font-mono text-[11px] font-bold whitespace-nowrap cursor-pointer hover:border-brand-terracotta/50 hover:text-white transition-all flex items-center gap-1.5"
+                    >
+                      <i data-lucide="play" class="w-3 h-3"></i>
+                      <span>Ep. 11</span>
+                    </button>
+                    <button
+                      type="button"
+                      onclick="setPodcastEpisode('mbFEoxhAmmw', 'Episódio 10 - Podcast Estación Fronteira con Daniel Mello Uruguaio', '10', this)"
+                      class="podcast-ep-btn px-3 py-1.5 rounded-xl bg-neutral-950 text-neutral-300 border border-[#20221E] font-mono text-[11px] font-bold whitespace-nowrap cursor-pointer hover:border-brand-terracotta/50 hover:text-white transition-all flex items-center gap-1.5"
+                    >
+                      <i data-lucide="play" class="w-3 h-3"></i>
+                      <span>Ep. 10</span>
+                    </button>
+                    <button
+                      type="button"
+                      onclick="setPodcastEpisode('OEQMj-wEDdc', 'Episódio 09 - Podcast Estación Fronteira con Daniel Mello Uruguaio', '09', this)"
+                      class="podcast-ep-btn px-3 py-1.5 rounded-xl bg-neutral-950 text-neutral-300 border border-[#20221E] font-mono text-[11px] font-bold whitespace-nowrap cursor-pointer hover:border-brand-terracotta/50 hover:text-white transition-all flex items-center gap-1.5"
+                    >
+                      <i data-lucide="play" class="w-3 h-3"></i>
+                      <span>Ep. 09</span>
+                    </button>
+                    <button
+                      type="button"
+                      onclick="setPodcastEpisode('ElLTWsybFrs', 'Episódio 08 - Podcast Estación Fronteira con Daniel Mello Uruguaio', '08', this)"
+                      class="podcast-ep-btn px-3 py-1.5 rounded-xl bg-neutral-950 text-neutral-300 border border-[#20221E] font-mono text-[11px] font-bold whitespace-nowrap cursor-pointer hover:border-brand-terracotta/50 hover:text-white transition-all flex items-center gap-1.5"
+                    >
+                      <i data-lucide="play" class="w-3 h-3"></i>
+                      <span>Ep. 08</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Player Footer Action & Hint -->
+                <div class="mt-4 pt-3 border-t border-[#20221E]/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-left">
+                  <div class="flex items-center gap-2 text-neutral-400 text-xs">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-brand-yellow shrink-0"></i>
+                    <span>Clique em qualquer episódio para reproduzir</span>
+                  </div>
+                  <a
+                    href="https://www.youtube.com/watch?v=VNJ4plwx_7o&list=PLskjElD7t1gDBPekdXnssFg6wuROVFlvU"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-xl font-sans text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer shadow-md shrink-0"
+                  >
+                    <i data-lucide="youtube" class="w-4 h-4"></i>
+                    <span>Abrir Playlist Completa no YouTube</span>
+                    <i data-lucide="external-link" class="w-3 h-3"></i>
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- Cultural Artwork Vignette (PDF Page 5 concept: Train tracks & mate sunset) -->
+              <div class="bg-brand-charcoal/60 border border-[#20221E] rounded-3xl p-5 sm:p-6 relative overflow-hidden flex flex-col sm:flex-row gap-5 items-center">
+                <!-- SVG Thumbnail -->
+                <div class="w-full sm:w-44 aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-b from-[#181A17] to-[#0A0B09] border border-[#20221E] relative shrink-0">
+                  <svg viewBox="0 0 400 300" class="w-full h-full select-none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                       <linearGradient id="pampaSunset" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#3B1C0A" /> <!-- Deep Red Orange -->
-                        <stop offset="40%" stop-color="#803D1B" /> <!-- Rich Terracotta -->
-                        <stop offset="70%" stop-color="#E5A900" /> <!-- Golden Yellow -->
-                        <stop offset="100%" stop-color="#1A1B19" /> <!-- Dark Ground -->
+                        <stop offset="0%" stop-color="#3B1C0A" />
+                        <stop offset="40%" stop-color="#803D1B" />
+                        <stop offset="70%" stop-color="#E5A900" />
+                        <stop offset="100%" stop-color="#1A1B19" />
                       </linearGradient>
                       <linearGradient id="hillGrad" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="0%" stop-color="#1E1F1D" />
                         <stop offset="100%" stop-color="#0A0B09" />
                       </linearGradient>
                     </defs>
-
-                    <!-- Sky background sunset gradient -->
                     <rect width="400" height="300" fill="url(#pampaSunset)" />
-                    
-                    <!-- Sun disk -->
                     <circle cx="200" cy="180" r="45" fill="#FFF2CC" opacity="0.9" />
-                    <!-- Sun reflection/glow -->
                     <circle cx="200" cy="180" r="70" fill="#E5A900" opacity="0.15" />
-
-                    <!-- Distant Pampa hills -->
                     <path d="M 0,220 Q 120,200 240,225 T 400,215 L 400,300 L 0,300 Z" fill="url(#hillGrad)" />
-                    <!-- Near Pampa ground -->
                     <path d="M 0,240 Q 100,230 200,245 T 400,235 L 400,300 L 0,300 Z" fill="#0D0E0C" />
-
-                    <!-- Train Tracks (Ferrovia) perspective -->
                     <line x1="200" y1="210" x2="200" y2="300" stroke="#3E413B" stroke-width="1.5" />
-                    
-                    <!-- Left rail -->
                     <line x1="195" y1="210" x2="100" y2="300" stroke="#5E615B" stroke-width="2" />
-                    <!-- Right rail -->
                     <line x1="205" y1="210" x2="300" y2="300" stroke="#5E615B" stroke-width="2" />
-
-                    <!-- Railroad Ties (Dormentes) -->
                     <line x1="192" y1="215" x2="208" y2="215" stroke="#252723" stroke-width="1.5" />
                     <line x1="188" y1="225" x2="212" y2="225" stroke="#252723" stroke-width="1.8" />
                     <line x1="182" y1="237" x2="218" y2="237" stroke="#252723" stroke-width="2" />
                     <line x1="172" y1="252" x2="228" y2="252" stroke="#252723" stroke-width="2.5" />
                     <line x1="158" y1="270" x2="242" y2="270" stroke="#252723" stroke-width="3" />
                     <line x1="138" y1="290" x2="262" y2="290" stroke="#252723" stroke-width="3.5" />
-
-                    <!-- Silhouette of a man sitting on a rail holding a Mate cup -->
-                    <!-- Sitting coordinates on the left rail around x=150, y=260 -->
-                    <!-- Seat torso -->
                     <path d="M 148,230 C 148,225 154,225 156,230 L 158,245 C 158,248 152,254 148,254 Z" fill="#000000" />
-                    <!-- Head / Sombrero -->
                     <ellipse cx="152" cy="222" rx="6" ry="4" fill="#000000" />
                     <path d="M 144,222 Q 152,219 160,222" stroke="#000000" stroke-width="1.5" stroke-linecap="round" />
-                    <!-- Arm holding mate -->
                     <path d="M 148,234 Q 154,236 153,240" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-                    <!-- Legs on rail -->
                     <path d="M 148,245 L 140,258 L 142,268" stroke="#000000" stroke-width="2.2" stroke-linecap="round" />
-
-                    <!-- Steam / Smoke from Mate rising -->
                     <path d="M 153,238 Q 155,233 152,229 T 155,223" stroke="#FFF2CC" stroke-width="0.8" stroke-opacity="0.3" fill="none" />
                   </svg>
-
-                  <!-- Label overlay -->
-                  <div class="relative z-10 w-full p-4 bg-gradient-to-t from-black to-transparent text-center">
-                    <span class="block font-mono text-[9px] text-brand-yellow uppercase tracking-widest font-bold">Estación Fronteira</span>
-                    <h5 class="font-serif italic text-xs text-neutral-300">A Ferrovia que conecta sons e saberes</h5>
-                  </div>
                 </div>
-
-                <div class="mt-4 p-3 bg-neutral-900 border border-[#20221E] rounded-xl text-center">
-                  <span class="font-mono text-[8px] bg-brand-terracotta/10 text-brand-terracotta border border-brand-terracotta/20 px-2 py-0.5 rounded uppercase font-bold inline-block mb-1.5">
-                    Ilustração Oficial do Podcast (PDF Pág 5)
+                <!-- SVG Caption & Meaning -->
+                <div class="space-y-1.5 text-left">
+                  <span class="font-mono text-[9px] bg-brand-terracotta/15 text-brand-terracotta border border-brand-terracotta/25 px-2 py-0.5 rounded uppercase font-bold inline-block">
+                    Conceito Original (Projeto Pág 5)
                   </span>
-                  <p class="text-[10px] text-neutral-500 font-mono uppercase tracking-widest">
-                    O homem no trilho de trem bebendo mate ao pôr do sol
+                  <h4 class="font-serif italic text-sm text-neutral-200">
+                    &ldquo;A ferrovia que conecta sons e saberes&rdquo;
+                  </h4>
+                  <p class="font-sans text-xs text-neutral-400 leading-relaxed">
+                    A metáfora do homem sentado no trilho tomando mate ao pôr do sol sintetiza o espírito do podcast: a parada reflexiva na estação da vida, ouvindo a memória da terra.
                   </p>
                 </div>
               </div>
+
             </div>
 
-            <!-- Column 2: Podcast Story & Info (7 cols) -->
-            <div class="lg:col-span-7 order-1 lg:order-2 space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start">
-              <span class="font-mono text-xs text-brand-terracotta font-bold uppercase tracking-widest block">
-                Comunicação & Cidadania
-              </span>
-              <h2 class="font-display font-black text-2xl sm:text-4xl md:text-5xl text-white uppercase leading-tight tracking-tight">
-                Podcast &ldquo;Estación Fronteira&rdquo;
-              </h2>
-              <div class="w-16 h-1 bg-brand-terracotta rounded-full mx-auto lg:mx-0"></div>
-
-              <p class="font-sans text-neutral-300 text-sm sm:text-base leading-relaxed">
-                O podcast <span class="font-semibold text-white">Estación Fronteira</span> é um autêntico canal de resgate, salvaguarda de memórias e promoção social criado por Daniel Mello. O projeto une a boa música tradicional gaúcha e uruguaia a relatos, causos e depoimentos sobre economia cooperativa, unindo povos.
-              </p>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 text-left w-full">
-                <div class="flex gap-3 items-start">
-                  <div class="p-2 bg-neutral-900 border border-[#20221E] rounded-lg shrink-0 text-brand-yellow">
-                    <i data-lucide="train" class="w-4 h-4"></i>
+            <!-- Column 2: Context, Pillars & Portal Eu Amo Esteio (5 cols) -->
+            <div class="lg:col-span-5 space-y-6">
+              
+              <!-- The 2 Pillars -->
+              <div class="space-y-4">
+                <div class="p-5 bg-neutral-900 border border-[#20221E] rounded-2xl flex gap-4 items-start text-left">
+                  <div class="p-2.5 bg-neutral-950 border border-[#20221E] rounded-xl shrink-0 text-brand-yellow">
+                    <i data-lucide="train" class="w-5 h-5"></i>
                   </div>
                   <div>
-                    <h4 class="font-display font-bold text-xs text-white uppercase tracking-wider">
+                    <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider">
                       Vagões de Conteúdo
                     </h4>
                     <p class="font-sans text-xs text-neutral-400 leading-relaxed mt-1">
-                      Episódios organizados poeticamente como vagões que carregam música, história e ensinamentos cooperativos.
+                      Episódios organizados poeticamente como vagões que transportam canções históricas, relatos biográficos e ensinamentos cooperativos da fronteira.
                     </p>
                   </div>
                 </div>
 
-                <div class="flex gap-3 items-start">
-                  <div class="p-2 bg-neutral-900 border border-[#20221E] rounded-lg shrink-0 text-brand-blue">
-                    <i data-lucide="radio" class="w-4 h-4"></i>
+                <div class="p-5 bg-neutral-900 border border-[#20221E] rounded-2xl flex gap-4 items-start text-left">
+                  <div class="p-2.5 bg-neutral-950 border border-[#20221E] rounded-xl shrink-0 text-brand-blue">
+                    <i data-lucide="radio" class="w-5 h-5"></i>
                   </div>
                   <div>
-                    <h4 class="font-display font-bold text-xs text-white uppercase tracking-wider">
+                    <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider">
                       Estação das Pátrias
                     </h4>
                     <p class="font-sans text-xs text-neutral-400 leading-relaxed mt-1">
-                      Conexão radiofônica direta unindo as experiências e lutas das comunidades de Esteio (RS) ao Uruguai.
+                      Conexão radiofônica e audiovisual unindo as vivências do povo de Esteio (RS) e as raízes uruguaias, celebrando uma identidade sem fronteiras.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <!-- PORTAL EU AMO ESTEIO CARD INTEGRATION -->
-              <div id="portal-card" class="border-t border-[#20221E]/60 pt-6 mt-4 w-full text-left">
-                <div class="bg-neutral-900 border border-[#20221E] rounded-3xl p-6 relative">
-                  <div class="flex items-center gap-2 text-brand-blue mb-3">
-                    <i data-lucide="heart" class="w-4 h-4 text-brand-blue fill-brand-blue"></i>
-                    <span class="font-mono text-[9px] uppercase tracking-widest font-bold">Iniciativa Social</span>
-                  </div>
-                  
-                  <h3 class="font-display font-bold text-base text-white uppercase mb-2">
-                    Portal &ldquo;Eu Amo Esteio&rdquo;
-                  </h3>
-                  
-                  <p class="font-sans text-xs sm:text-sm text-neutral-300 leading-relaxed mb-4">
-                    Daniel Mello, ao lado de parceiros comunitários como Digor, idealizou e mantém ativo o portal <span class="font-semibold text-white">Eu Amo Esteio</span>. A plataforma atua fortemente na defesa social pós-calamidade no município, divulgando ações de solidariedade, feiras populares e fomento à cultura regional.
-                  </p>
+              <!-- Portal Eu Amo Esteio Card -->
+              <div id="portal-card" class="bg-gradient-to-br from-neutral-900 to-[#121411] border border-[#20221E] rounded-3xl p-6 relative shadow-xl text-left">
+                <div class="flex items-center gap-2 text-brand-blue mb-3">
+                  <i data-lucide="heart" class="w-4 h-4 text-brand-blue fill-brand-blue"></i>
+                  <span class="font-mono text-[9px] uppercase tracking-widest font-bold">Iniciativa Social Conectada</span>
+                </div>
+                
+                <h3 class="font-display font-bold text-lg text-white uppercase mb-2">
+                  Portal &ldquo;Eu Amo Esteio&rdquo;
+                </h3>
+                
+                <p class="font-sans text-xs sm:text-sm text-neutral-300 leading-relaxed mb-5">
+                  Daniel Mello, ao lado de parceiros comunitários como Digor, idealizou e mantém ativo o portal <span class="font-semibold text-white">Eu Amo Esteio</span>. A plataforma atua na mobilização social, divulgação de ações solidárias pós-calamidade, valorização do comércio local e fomento à cultura popular.
+                </p>
 
-                  <div class="flex flex-col sm:flex-row gap-3">
-                    <a
-                      href="https://euamoesteio.com.br"
-                      target="_blank"
-                      rel="noreferrer"
-                      class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-brand-blue hover:bg-brand-blue/90 text-white rounded-xl font-sans text-xs font-semibold uppercase tracking-wider transition-colors cursor-pointer"
-                    >
-                      <span>Visitar Portal</span>
-                      <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
+                <div class="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href="https://euamoesteio.com.br"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-brand-blue hover:bg-brand-blue/90 text-white rounded-xl font-sans text-xs font-semibold uppercase tracking-wider transition-colors cursor-pointer"
+                  >
+                    <span>Visitar Portal</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
 
-                    <a
-                      href="https://www.youtube.com/@euamoesteio"
-                      target="_blank"
-                      rel="noreferrer"
-                      class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 border border-[#20221E] text-neutral-300 rounded-xl font-sans text-xs font-semibold uppercase tracking-wider hover:bg-neutral-800 transition-colors cursor-pointer"
-                    >
-                      <span>Canal no YouTube</span>
-                      <i data-lucide="youtube" class="w-3.5 h-3.5"></i>
-                    </a>
-                  </div>
+                  <a
+                    href="https://www.youtube.com/@euamoesteio"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 border border-[#20221E] text-neutral-300 rounded-xl font-sans text-xs font-semibold uppercase tracking-wider hover:bg-neutral-800 transition-colors cursor-pointer"
+                  >
+                    <i data-lucide="youtube" class="w-3.5 h-3.5 text-red-500"></i>
+                    <span>Canal no YouTube</span>
+                  </a>
                 </div>
               </div>
 
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION 5: MÚSICA & CANAL DE VÍDEOS -->
-      <section id="musica" class="py-20 bg-neutral-900/20 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          
-          <!-- Section Header -->
-          <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="font-mono text-xs text-brand-yellow font-bold uppercase tracking-widest block mb-2">
-              Universo de Escuta
-            </span>
-            <h2 class="font-display font-black text-2xl sm:text-4xl md:text-5xl text-white mb-4 uppercase tracking-tight">
-              Música & Audiovisual
-            </h2>
-            <div class="w-16 h-1 bg-brand-yellow mx-auto rounded-full mb-6"></div>
-            <p class="font-sans text-neutral-300 text-sm sm:text-base leading-relaxed">
-              Sintonize com as melodias criadas nas duas fronteiras. Escute a discografia oficial no Spotify e assista às apresentações no YouTube.
-            </p>
-          </div>
-
-          <!-- Dynamic Player Containers -->
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-            
-            <!-- Column 1: Spotify Embed Container -->
-            <div class="lg:col-span-6 flex flex-col h-full">
-              <div class="bg-neutral-900 border border-[#20221E] p-6 rounded-3xl flex-1 flex flex-col justify-between">
-                <div>
-                  <div class="flex items-center gap-2 text-brand-yellow mb-4">
-                    <i data-lucide="music" class="w-4 h-4"></i>
-                    <span class="font-mono text-[9px] uppercase tracking-widest font-bold">Spotify Oficial</span>
-                  </div>
-                  
-                  <h3 class="font-display font-bold text-lg text-white uppercase mb-2">
-                    Discografia no Spotify
-                  </h3>
-                  
-                  <p class="font-sans text-xs text-neutral-400 leading-relaxed mb-6">
-                    Acesse álbuns de sucesso, canções solos e parcerias icônicas. Clique no botão abaixo para carregar com total segurança o player do Spotify.
-                  </p>
-                </div>
-
-                <!-- Premium Spotify Loader Area -->
-                <div class="relative rounded-2xl overflow-hidden bg-neutral-950 border border-[#20221E] min-h-[380px] flex flex-col items-center justify-center w-full">
-                  
-                  <!-- Aesthetic Tape cassette Mockup Loader -->
-                  <div id="spotify-placeholder" class="absolute inset-0 p-6 flex flex-col items-center justify-center text-center bg-gradient-to-b from-neutral-950 to-brand-charcoal z-10 transition-opacity duration-300">
-                    <div class="w-24 h-14 border border-brand-yellow/30 rounded-lg flex items-center justify-between p-2 relative mb-6">
-                      <div class="w-5 h-5 rounded-full border border-brand-yellow/30 flex items-center justify-center animate-spin" style="animation-duration: 10s;">
-                        <span class="w-1 h-1 rounded-full bg-brand-yellow"></span>
-                      </div>
-                      <div class="h-1 bg-brand-yellow/20 flex-1 mx-2 rounded"></div>
-                      <div class="w-5 h-5 rounded-full border border-brand-yellow/30 flex items-center justify-center animate-spin" style="animation-duration: 10s;">
-                        <span class="w-1 h-1 rounded-full bg-brand-yellow"></span>
-                      </div>
-                    </div>
-
-                    <span class="block font-mono text-[8px] text-brand-yellow uppercase tracking-widest mb-2 font-bold">
-                      Player Seguro Spotify
-                    </span>
-                    <h4 class="font-sans font-bold text-xs mb-1 text-white uppercase">
-                      Daniel Mello Uruguaio
-                    </h4>
-                    <p class="font-sans text-[11px] text-neutral-400 max-w-xs mb-5 leading-normal">
-                      Carregamento leve e otimizado para celulares. Toque abaixo para escutar a discografia.
-                    </p>
-                    
-                    <button
-                      id="load-spotify-btn"
-                      onclick="loadSpotifyWidget()"
-                      class="px-5 py-2.5 bg-brand-yellow text-brand-charcoal text-xs font-bold rounded-xl uppercase tracking-widest hover:bg-white hover:scale-105 transition-all duration-300 cursor-pointer flex items-center gap-1.5"
-                    >
-                      <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
-                      Ouvir no Spotify
-                    </button>
-                  </div>
-
-                  <!-- Spotify Player Container -->
-                  <div id="spotify-player-container" class="absolute inset-0 w-full h-full hidden">
-                    <!-- iframe is loaded here dynamically -->
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- Column 2: YouTube Channel Mockup -->
-            <div class="lg:col-span-6 flex flex-col h-full">
-              <div class="bg-neutral-900 border border-[#20221E] p-6 rounded-3xl flex-1 flex flex-col justify-between">
-                <div>
-                  <div class="flex items-center gap-2 text-red-500 mb-4">
-                    <i data-lucide="youtube" class="w-4 h-4"></i>
-                    <span class="font-mono text-[9px] uppercase tracking-widest font-bold">YouTube Oficial</span>
-                  </div>
-                  
-                  <h3 class="font-display font-bold text-lg text-white uppercase mb-2">
-                    Apresentações & Vídeos
-                  </h3>
-                  
-                  <p class="font-sans text-xs text-neutral-400 leading-relaxed mb-6">
-                    Acompanhe entrevistas, documentários históricos, registros de shows ao vivo e debates sociais no canal oficial comunitário.
-                  </p>
-                </div>
-
-                <div class="relative rounded-2xl overflow-hidden border border-[#20221E] bg-neutral-950 p-2 flex-1 flex flex-col justify-center">
-                  <div class="aspect-video w-full rounded-xl overflow-hidden relative group bg-neutral-950 flex items-center justify-center">
-                    
-                    <!-- Beautiful modern grid player cover -->
-                    <div class="absolute inset-0 bg-neutral-950 flex flex-col justify-center items-center text-center p-4">
-                      <i data-lucide="video" class="w-8 h-8 text-neutral-700 mb-2"></i>
-                      <h5 class="font-sans font-bold text-[10px] uppercase text-neutral-300 mb-1">Apresentações ao Vivo & Lives</h5>
-                      <p class="font-sans text-[9px] text-neutral-500 max-w-[200px]">Bastidores e apresentações de Daniel Mello registradas no YouTube.</p>
-                      <div class="mt-3 font-mono text-[8px] bg-neutral-900 border border-[#20221E] px-2 py-0.5 rounded text-neutral-600">640 x 360 px</div>
-                    </div>
-                    
-                    <!-- Play Overlay Button -->
-                    <a
-                      href="https://www.youtube.com/@euamoesteio"
-                      target="_blank"
-                      rel="noreferrer"
-                      class="absolute p-4 rounded-full bg-red-600 text-white shadow-lg group-hover:scale-110 transition-all duration-300 z-10 flex items-center justify-center"
-                      title="Assistir no YouTube"
-                    >
-                      <i data-lucide="play" class="w-5 h-5 fill-current ml-0.5"></i>
-                    </a>
-                  </div>
-
-                  <div class="mt-4 text-center">
-                    <span class="block font-sans font-semibold text-xs text-[#FAF8F5] mb-3">
-                      Canal de Parceria: @euamoesteio
-                    </span>
-                    
-                    <a
-                      href="https://www.youtube.com/@euamoesteio"
-                      target="_blank"
-                      rel="noreferrer"
-                      class="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white text-xs font-bold rounded-xl uppercase tracking-wider transition-all duration-300 cursor-pointer w-full"
-                    >
-                      <span>Acessar Canal Oficial</span>
-                      <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
             </div>
 
           </div>
         </div>
       </section>
 
-      <!-- SECTION 6: CLIPPING DE IMPRENSA -->
-      <section id="clipping" class="py-20 bg-neutral-950 border-t border-b border-[#20221E]/60 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 gap-4">
-            <div>
-              <div class="flex items-center gap-1.5 text-brand-terracotta mb-2">
-                <i data-lucide="newspaper" class="w-4 h-4"></i>
-                <span class="font-mono text-xs uppercase tracking-widest font-bold">Imprensa & Notícias</span>
-              </div>
-              <h3 class="font-display font-bold text-xl sm:text-2xl md:text-3xl text-[#FAF8F5] uppercase">
-                Clipping de Imprensa
-              </h3>
-            </div>
-            
-            <p class="font-sans text-xs text-neutral-400 max-w-xs sm:text-right leading-relaxed">
-              Destaques e notícias que validam a herança cultural, o compromisso solidário e o impacto comunitário em Esteio, RS.
-            </p>
-          </div>
-
-          <!-- Editorial Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Article 1 -->
-            <div class="bg-neutral-900 border border-[#20221E] rounded-2xl p-6 flex flex-col justify-between hover:border-brand-yellow/30 transition-all">
-              <div>
-                <span class="inline-block font-mono text-[8px] font-bold text-brand-terracotta bg-brand-terracotta/5 px-2 py-0.5 rounded uppercase tracking-wider mb-4">
-                  Solidariedade
-                </span>
-                <h4 class="font-display font-bold text-sm sm:text-base text-white mb-2 leading-snug">
-                  <a href="https://euamoesteio.com.br" target="_blank" rel="noreferrer" class="hover:text-brand-yellow transition-colors inline-flex items-center gap-1 group">
-                    Feira Solidária e Reconstrução no Bairro Novo Esteio
-                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                  </a>
-                </h4>
-                <p class="font-sans text-xs text-neutral-400 leading-relaxed mb-4">
-                  Liderada por Daniel Mello Uruguaio, mutirão reúne arte, economia solidária e música de fronteira para angariar recursos e reerguer lares de atingidos pelas águas.
-                </p>
-              </div>
-              <div class="pt-4 border-t border-[#20221E] flex items-center justify-between text-[9px] font-mono text-neutral-500">
-                <span>PORTAL EU AMO ESTEIO</span>
-                <span class="text-brand-blue font-bold">LER MATÉRIA</span>
-              </div>
-            </div>
-
-            <!-- Article 2 -->
-            <div class="bg-neutral-900 border border-[#20221E] rounded-2xl p-6 flex flex-col justify-between hover:border-brand-yellow/30 transition-all">
-              <div>
-                <span class="inline-block font-mono text-[8px] font-bold text-brand-terracotta bg-brand-terracotta/5 px-2 py-0.5 rounded uppercase tracking-wider mb-4">
-                  Resiliência
-                </span>
-                <h4 class="font-display font-bold text-sm sm:text-base text-white mb-2 leading-snug">
-                  <a href="https://euamoesteio.com.br" target="_blank" rel="noreferrer" class="hover:text-brand-yellow transition-colors inline-flex items-center gap-1 group">
-                    Canto e Cura Social nas Comunidades Gaúchas
-                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                  </a>
-                </h4>
-                <p class="font-sans text-xs text-neutral-400 leading-relaxed mb-4">
-                  Pesquisa e depoimentos sobre como a atuação artística e a roda de violão de Daniel Mello servem de suporte emocional e união para as famílias periféricas de Esteio.
-                </p>
-              </div>
-              <div class="pt-4 border-t border-[#20221E] flex items-center justify-between text-[9px] font-mono text-neutral-500">
-                <span>CULTURA DE FRONTEIRA</span>
-                <span class="text-brand-blue font-bold">LER MATÉRIA</span>
-              </div>
-            </div>
-
-            <!-- Article 3 -->
-            <div class="bg-neutral-900 border border-[#20221E] rounded-2xl p-6 flex flex-col justify-between hover:border-brand-yellow/30 transition-all">
-              <div>
-                <span class="inline-block font-mono text-[8px] font-bold text-brand-terracotta bg-brand-terracotta/5 px-2 py-0.5 rounded uppercase tracking-wider mb-4">
-                  Cooperativismo
-                </span>
-                <h4 class="font-display font-bold text-sm sm:text-base text-white mb-2 leading-snug">
-                  <a href="https://euamoesteio.com.br" target="_blank" rel="noreferrer" class="hover:text-brand-yellow transition-colors inline-flex items-center gap-1 group">
-                    Novo Esteio: Vanguarda da Autogestão Comunitária
-                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                  </a>
-                </h4>
-                <p class="font-sans text-xs text-neutral-400 leading-relaxed mb-4">
-                  Comitê de moradores e fomento cultural liderados por ativistas estabelecem laboratórios comunitários para produção e comercialização solidária regional.
-                </p>
-              </div>
-              <div class="pt-4 border-t border-[#20221E] flex items-center justify-between text-[9px] font-mono text-neutral-500">
-                <span>RECONSTRUÇÃO RS</span>
-                <span class="text-brand-blue font-bold">LER MATÉRIA</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Gallery representation for physical clippings -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 bg-neutral-900 p-4 rounded-3xl border border-[#20221E]">
-            <div class="p-2">
-              <div class="aspect-[16/9] rounded-xl overflow-hidden bg-neutral-950 border border-[#20221E] flex flex-col justify-center items-center text-center p-4 min-h-[160px]">
-                <i data-lucide="images" class="w-8 h-8 text-neutral-700 mb-2"></i>
-                <h6 class="font-sans font-bold text-[10px] uppercase text-white mb-1">Galeria: Mutirão Bairro Novo Esteio</h6>
-                <p class="font-sans text-[9px] text-neutral-500 max-w-xs">Acervo fotográfico registrando doações, frentes de trabalho e shows solidários comunitários.</p>
-                <div class="mt-2 font-mono text-[8px] bg-[#0D0E0C] border border-[#20221E] px-2 py-0.5 rounded text-neutral-600">800 x 450 px</div>
-              </div>
-              <p class="font-sans text-xs text-neutral-400 italic mt-2.5 text-center">Mutirão solidário de apoio comunitário — Novo Esteio</p>
-            </div>
-
-            <div class="p-2">
-              <div class="aspect-[16/9] rounded-xl overflow-hidden bg-neutral-950 border border-[#20221E] flex flex-col justify-center items-center text-center p-4 min-h-[160px]">
-                <i data-lucide="radio" class="w-8 h-8 text-neutral-700 mb-2"></i>
-                <h6 class="font-sans font-bold text-[10px] uppercase text-white mb-1">Galeria: Cabine de Rádio</h6>
-                <p class="font-sans text-[9px] text-neutral-500 max-w-xs">Registros de Daniel atuando na difusão de causos e integração cultural de comunidades.</p>
-                <div class="mt-2 font-mono text-[8px] bg-[#0D0E0C] border border-[#20221E] px-2 py-0.5 rounded text-neutral-600">800 x 450 px</div>
-              </div>
-              <p class="font-sans text-xs text-neutral-400 italic mt-2.5 text-center">Daniel Mello no comando das ondas radiofônicas</p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- SECTION 7: CONTATO (AGENDAMENTO & PROPOSTAS) -->
+      <!-- SECTION 5: CONTATO (AGENDAMENTO & PROPOSTAS) -->
       <footer id="contato" class="bg-[#0A0B09] text-[#FAF8F5] pt-20 pb-8 relative overflow-hidden border-t border-[#20221E]/60">
         <!-- Color band header -->
         <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-yellow via-brand-terracotta to-brand-blue"></div>
@@ -1633,33 +1730,7 @@
         });
       }
 
-      // 5. Spotify Widget Lazy Loader
-      function loadSpotifyWidget() {
-        const placeholder = document.getElementById('spotify-placeholder');
-        const container = document.getElementById('spotify-player-container');
-        
-        placeholder.style.opacity = '0';
-        setTimeout(() => {
-          placeholder.classList.add('hidden');
-          container.classList.remove('hidden');
-          
-          container.innerHTML = `
-            <iframe
-              id="spotify-iframe"
-              src="https://open.spotify.com/embed/artist/4yEgD7326BzaptH3mATsp0?utm_source=generator"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              allowFullScreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-              class="w-full h-full border-none"
-            ></iframe>
-          `;
-        }, 300);
-      }
-
-      // 6. WhatsApp Assistant text preview
+      // 5. WhatsApp Assistant text preview
       function updateWhatsAppPreview() {
         const helperText = document.getElementById('whatsapp-text-helper').value;
         const previewElement = document.getElementById('whatsapp-text-preview');
@@ -1711,6 +1782,42 @@
           document.getElementById('form-email').value = '';
           document.getElementById('form-mensagem').value = '';
         }, 1500);
+      }
+
+      // 8. Podcast Episode Switcher
+      function setPodcastEpisode(videoId, title, epLabel, btnElement) {
+        const iframe = document.getElementById('podcast-player-iframe');
+        if (iframe) {
+          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+          iframe.title = title;
+        }
+        const titleEl = document.getElementById('podcast-current-title');
+        if (titleEl) {
+          titleEl.textContent = title;
+        }
+        const badgeEl = document.getElementById('podcast-current-badge');
+        if (badgeEl) {
+          badgeEl.textContent = `Episódio ${epLabel}`;
+        }
+
+        // Update button states
+        document.querySelectorAll('.podcast-ep-btn').forEach(btn => {
+          btn.classList.remove('bg-brand-terracotta', 'text-white', 'border-brand-terracotta', 'shadow-sm');
+          btn.classList.add('bg-neutral-950', 'text-neutral-300', 'border-[#20221E]');
+          const icon = btn.querySelector('i');
+          if (icon) {
+            icon.classList.remove('fill-current');
+          }
+        });
+
+        if (btnElement) {
+          btnElement.classList.remove('bg-neutral-950', 'text-neutral-300', 'border-[#20221E]');
+          btnElement.classList.add('bg-brand-terracotta', 'text-white', 'border-brand-terracotta', 'shadow-sm');
+          const activeIcon = btnElement.querySelector('i');
+          if (activeIcon) {
+            activeIcon.classList.add('fill-current');
+          }
+        }
       }
     </script>
   </body>
