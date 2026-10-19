@@ -426,37 +426,42 @@
             <div class="lg:col-span-5 space-y-6 flex flex-col items-center w-full">
               
               <!-- Archival Portfolio Frame representing the physical materials -->
-              <div class="w-full bg-brand-charcoal p-4 rounded-3xl border border-[#20221E] shadow-xl relative group">
-                <div class="absolute top-4 right-4 z-10 bg-brand-terracotta text-[#FAF8F5] font-mono text-[8px] uppercase tracking-widest px-2.5 py-1 rounded-md font-bold border border-brand-terracotta/40">
-                  Acervo Físico
+              <div class="w-full bg-brand-charcoal p-4 sm:p-5 rounded-3xl border border-[#20221E] shadow-2xl relative group hover:border-brand-yellow/30 transition-all duration-500">
+                <div class="absolute top-4 right-4 z-10 bg-brand-terracotta text-[#FAF8F5] font-mono text-[8px] uppercase tracking-widest px-2.5 py-1 rounded-md font-bold border border-brand-terracotta/40 shadow-md">
+                  Acervo Histórico Original
                 </div>
                 
-                <div class="aspect-[4/3] w-full rounded-2xl overflow-hidden bg-neutral-900 border border-[#20221E] flex flex-col justify-center items-center text-center p-6 min-h-[220px] relative">
-                  <!-- Abstract geometric representations of vinyl sleeves and sheet music -->
-                  <div class="absolute inset-0 opacity-10 flex items-center justify-center">
-                    <svg class="w-full h-full text-[#FAF8F5]" fill="none" viewBox="0 0 100 100">
-                      <rect x="10" y="10" width="80" height="80" rx="4" stroke="currentColor" stroke-width="1"/>
-                      <circle cx="50" cy="50" r="25" stroke="currentColor" stroke-width="1"/>
-                      <line x1="10" y1="50" x2="90" y2="50" stroke="currentColor" stroke-dasharray="3,3" />
-                    </svg>
-                  </div>
+                <div class="w-full rounded-2xl overflow-hidden bg-neutral-900 border border-[#20221E] relative group">
+                  <img
+                    src="https://danielmellouruguaio.com.br/imagens/Daniel-Mello-Uruguaio-foto-infancia.jpeg"
+                    alt="Daniel Mello na infância em Artigas com o violão aos 7 anos"
+                    class="w-full h-auto max-h-[420px] object-cover object-top group-hover:scale-105 transition-transform duration-700 block"
+                    loading="lazy"
+                  />
+                  <!-- Subtle vignette gradient over the archival photo -->
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none"></div>
                   
-                  <div class="w-12 h-12 rounded-full bg-brand-terracotta/10 border border-brand-terracotta/20 flex items-center justify-center text-brand-terracotta mb-4">
-                    <i data-lucide="archive" class="w-5 h-5"></i>
-                  </div>
-                  <span class="block font-mono text-[9px] text-brand-terracotta uppercase tracking-widest mb-1.5 font-bold">Documentação de Vida</span>
-                  <h4 class="font-display font-bold text-xs uppercase text-white mb-2 tracking-wide">Fotografia Original: Infância</h4>
-                  <p class="font-sans text-[11px] text-neutral-400 max-w-xs leading-normal">
-                    Representação do acervo físico contendo a fotografia de Daniel em Artigas com o violão de ouvido aos sete anos.
-                  </p>
-                  <div class="mt-4 font-mono text-[8px] bg-[#0A0B09] border border-[#20221E] px-3 py-1 rounded text-neutral-500">
-                    600 x 450 px
+                  <!-- Overlay caption -->
+                  <div class="absolute bottom-3 left-3 right-3 text-left pointer-events-none">
+                    <span class="inline-block font-mono text-[9px] text-brand-yellow font-bold uppercase tracking-widest mb-1 bg-black/60 px-2 py-0.5 rounded border border-brand-yellow/30">
+                      Artigas, Uruguai • c. 1968
+                    </span>
+                    <h4 class="font-display font-bold text-xs uppercase text-white tracking-wide drop-shadow">
+                      Fotografia Original: Infância aos 7 Anos
+                    </h4>
+                    <p class="font-sans text-[11px] text-neutral-300 leading-tight drop-shadow mt-0.5">
+                      O início do toque intuitivo de ouvido que marcou o início de uma vida inteira dedicada à música.
+                    </p>
                   </div>
                 </div>
 
-                <p class="text-[10px] font-mono text-center text-neutral-500 uppercase tracking-widest mt-4">
-                  Origens de Fronteira • Artigas, Uruguai
-                </p>
+                <div class="mt-4 flex items-center justify-between font-mono text-[9px] text-neutral-400 uppercase tracking-widest px-1">
+                  <span class="flex items-center gap-1.5">
+                    <i data-lucide="camera" class="w-3.5 h-3.5 text-brand-yellow"></i>
+                    Foto Rara do Acervo
+                  </span>
+                  <span class="text-neutral-500">Fronteira UY / BR</span>
+                </div>
               </div>
 
               <!-- Editorial Quote Card (Solved positioning) -->
